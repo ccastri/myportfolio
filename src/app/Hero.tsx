@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="-z-10 absolute h-screen  bg-[#0F62FE] clip-triangle -rotate-180 overflow-x-hidden w-screen" />
       {/* Hero section */}
       <div className='h-screen w-screen flex flex-col md:flex-row   '>
-<div className="z-50  max-h-screen top-0 w-screen md:w-1/2 h-6/12 sm:h-screen pl-6  flex items-center justify-center  relative ">
+<div className="z-50  h-screen top-0 w-screen md:w-1/2 h-6/12 sm:h-screen pl-6  flex items-center justify-center  relative ">
   <Image
     src="/hero.png"
     alt="Camilo Castrillon"
