@@ -21,7 +21,7 @@ const Hero = () => {
 
   <svg
     viewBox="0 0 200 200"
-    // className="sm:pl-0 "
+    className="absolute"
     xmlns="http://www.w3.org/2000/svg"
     >
     <path
