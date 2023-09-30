@@ -39,13 +39,13 @@ const Hero = () => {
           </svg>
               </div> */}
         {/* </div> */}
-        <div className='h-[50%] md:h-screen mt-[75%] sm:mt-0    pb-4 w-screen sm:w-1/2   text-[#fafafa]   px-8 md:items-center md:justify-center flex flex-col'>
+        <div className='h-[50%] md:h-screen mt-[90%] sm:mt-0    pb-4 w-screen sm:w-1/2   text-[#fafafa]   px-8 md:items-center md:justify-center flex flex-col'>
           <h1 className='z-50 font-semibold  text-center text-3xl   '>
               Hi, there!
           </h1>
           <h2>{`I'm Camilo Castrillon a biomedical engineer and software developer from`} <span className="text-red-200">Cali, Colombia.</span></h2>
-          <p> Tech geek and AI enthusiast having a keen sense for innovation I am Looking forward to 
-            <span className='font-bold'>contribute local healthcare sector development</span>
+          <p> {`I have keen sense for innovation and creativity aimed to `}
+            <span className='font-bold'>{` contribute into local healthcare sector development`}</span>
               from a software perspective
           </p>
           <div className='space-y-2 w-56 text-center mx-auto'>
