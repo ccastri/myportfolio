@@ -43,7 +43,7 @@ const Hero = () => {
           <h1 className='z-50 font-semibold  text-center text-3xl   '>
               Hi, there!
           </h1>
-          <p className='text-sm'>{`I'm Camilo Castrillón a biomedical engineer and software developer from`} <span className="text-red-200">Cali, Colombia.</span>
+          <p className='text-sm text-center px-4'>{`I'm Camilo Castrillón a biomedical engineer and software developer from`} <span className="text-red-200">Cali, Colombia.</span>
           {`with a keen sense for innovation and creativity  `}
           </p>
           <div className='space-x-4 w-auto h-16  text-center flex m-auto'>
