@@ -7,21 +7,21 @@ import CVButton from './_components/CVButton';
 const Hero = () => {
   // const router = useRouter();
   return (
-    <div className='w-screen h-screen flex relative overflow-x-hidden'>
+    <div className='w-screen h-[calc(100vh-40px)] flex relative z-40 overflow-x-hidden'>
       {/* First triangle */}
-      <div className="-z-10 absolute h-screen  bg-[#0F62FE] clip-triangle -rotate-180 overflow-x-hidden w-screen" />
+      <div className="-z-10 absolute h-full  bg-[#0F62FE] clip-triangle -rotate-180 overflow-x-hidden w-screen" />
       {/* Hero section */}
-      <div className='h-screen w-screen flex flex-col md:flex-row relative  '>
+      <div className=' w-screen h-full flex items-center space-y-2   flex-col md:flex-row   '>
         {/* <div className="z-50   top-0  h-[50%] sm:h-screen pl-6  flex   relative "> */}
-          <div  className="absolute z-50  my-auto top-0 sm:top-10  rounded-full h-1/2 w-auto   md:w-1/2 items-center justify-center flex  sm:mb-0">
+          <div  className="absolute z-40 sm:top-10  rounded-full  w-auto   md:w-1/2 sm:mb-0">
 
           <Image
             src="/hero.png"
             alt="Camilo Castrillon"
             priority
            
-            width={380}
-            height={380}
+            width={300}
+            height={10}
           />
             </div>
             {/* <div className="absolute top-0 z-40">
@@ -39,23 +39,21 @@ const Hero = () => {
           </svg>
               </div> */}
         {/* </div> */}
-        <div className='h-[50%] md:h-screen mt-[90%] sm:mt-0    pb-4 w-screen sm:w-1/2   text-[#fafafa]   px-8 md:items-center md:justify-center flex flex-col'>
+        <div className='h-[50%] md:h-screen bottom-0 absolute sm:mt-0  w-screen sm:w-1/2   text-[#fafafa]   px-8 md:items-center md:justify-start flex flex-col'>
           <h1 className='z-50 font-semibold  text-center text-3xl   '>
               Hi, there!
           </h1>
-          <h2>{`I'm Camilo Castrillon a biomedical engineer and software developer from`} <span className="text-red-200">Cali, Colombia.</span></h2>
-          <p> {`I have keen sense for innovation and creativity aimed to `}
-            <span className='font-bold'>{` contribute into local healthcare sector development`}</span>
-              from a software perspective
+          <p className='text-sm'>{`I'm Camilo Castrillón a biomedical engineer and software developer from`} <span className="text-red-200">Cali, Colombia.</span>
+          {`with a keen sense for innovation and creativity  `}
           </p>
-          <div className='space-y-2 w-56 text-center mx-auto'>
+          <div className='space-x-4 w-auto h-16  text-center flex m-auto'>
 
           <div 
           onClick={()=>window.open('https://www.github.com/ccastri', '_blank')}
-          className="border-2 my-4 px-4 py-3  mx-auto bg-[#0F62FE] cursor-pointer rounded transition-all duration-200 transform hover:ease-in-out hover:scale-75 hover:bg-slate-700">
+          className="border-2  px-4 py-1 w-1/2  mx-auto bg-[#0F62FE] cursor-pointer rounded transition-all duration-200 transform hover:ease-in-out hover:scale-75 hover:bg-slate-700">
             <span>Check out my GitHub</span>
           </div>
-          <div className='mx-auto rounded-md border-2 hover:text-slate-900 cursor-pointer  bg-slate-500 hover:bg-slate-300 px-4 py-3 transition-all duration-200 transform hover:ease-in-out hover:scale-75'>
+          <div className='mx-auto  rounded-md w-1/2 border-2 h-auto text-center flex items-center  hover:text-slate-900 cursor-pointer  bg-slate-500 hover:bg-slate-300 transition-all duration-200 transform hover:ease-in-out hover:scale-75'>
 
             <CVButton/>
           </div>

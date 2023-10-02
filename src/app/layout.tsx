@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-// import { Railway } from 'next/font/google'
 import { Raleway, Merriweather_Sans } from "next/font/google";
-
+import Header from './_components/Header'
+import Footer from './_components/Footer';
 const raleway = Raleway({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.className} bg-slate-900`}>{children}</body>
+      <body className={`${raleway.className} overflow-x-hidden bg-slate-900`}>
+        <Header/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   )
 }
