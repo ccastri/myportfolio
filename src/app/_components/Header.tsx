@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='bg-[#fafafa] py-2 '>
+    <div className='bg-[#fafafa] py-2 px-5 '>
       <div className="w-screen right-0"><MenuIcon onClick={()=>setIsOpen(!isOpen)}/></div>
       <div className={`${isOpen?'h-screen opacity-100': 'h-0 opacity-0'} z-50 sticky top-0 bg-[#fafafa] transition-all duration-200 ease-in-out`}>
         <h1>Menu</h1>
