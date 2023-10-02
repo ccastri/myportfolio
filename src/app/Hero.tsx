@@ -7,11 +7,11 @@ import CVButton from './_components/CVButton';
 const Hero = () => {
   // const router = useRouter();
   return (
-    <div className='w-screen h-[calc(100vh-40px)] flex relative z-40 overflow-x-hidden'>
+    <div className='w-screen h-[calc(100vh-40px)] flex relative z-40 overflow-x-hidden' >
       {/* First triangle */}
       <div className="-z-10 absolute h-full  bg-[#0F62FE] clip-triangle -rotate-180 overflow-x-hidden w-screen" />
       {/* Hero section */}
-      <div className=' w-screen h-full flex items-center space-y-12  flex-col md:flex-row   '>
+      <div className=' w-screen h-full flex items-center space-y-16  flex-col md:flex-row   '>
         {/* <div className="z-50   top-0  h-[50%] sm:h-screen pl-6  flex   relative "> */}
           <div  className="absolute z-40 sm:top-10  rounded-full  w-auto   md:w-1/2 sm:mb-0">
 
@@ -39,7 +39,7 @@ const Hero = () => {
           </svg>
               </div> */}
         {/* </div> */}
-        <div className='h-auto md:h-screen top-[30%] space-y-8 absolute sm:mt-0  w-screen sm:w-1/2   text-[#fafafa]   px-8 md:items-center md:justify-start flex flex-col'>
+        <div className='h-auto md:h-screen top-[40%] space-y-4 absolute sm:mt-0  w-screen sm:w-1/2   text-[#fafafa]   px-8 md:items-center md:justify-start flex flex-col'>
           <h1 className='z-50 font-semibold  text-center text-3xl   '>
               Hi, there!
           </h1>
