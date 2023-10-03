@@ -16,8 +16,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${raleway.className} overflow-x-hidden bg-slate-900`}>
+    <html lang="en" className="m-0 p-0 overflow-x-hidden">
+      <body className={`${raleway.className} overflow-x-hidden text-slate-700 bg-[#fafafa
+      ]`}>
         <Header/>
         {children}
         <Footer/>

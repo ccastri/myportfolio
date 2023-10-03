@@ -11,3 +11,15 @@
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   width: 100%;
 }
+@keyframes rotate360 {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-rotate360 {
+  animation: rotate360 25s linear infinite; /* Adjust the duration as needed */
+}
