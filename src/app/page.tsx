@@ -48,14 +48,23 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between">
-      <Hero />
-      <motion.div initial={{ opacity: 0 }} animate={stackControls}>
+      <div id="home">
+
+      <Hero  />
+      </div>
+      <motion.div 
+      id='stack'
+      initial={{ opacity: 0 }} animate={stackControls}>
         <Stack />
       </motion.div>
-      <motion.div initial={{ opacity: 0 }} animate={sliderControls}>
+      <motion.div 
+      id="slider"
+      initial={{ opacity: 0 }} animate={sliderControls}>
         <Slider />
       </motion.div>
-      <motion.div initial={{ opacity: 0 }} animate={otherSkillsControls}>
+      <motion.div 
+      id='otherSkills'
+      initial={{ opacity: 0 }} animate={otherSkillsControls}>
         <OtherSkills />
       </motion.div>
     </main>

@@ -14,7 +14,7 @@ const CVButton = () => {
   };
 
   return (
-    <span className="mx-auto " onClick={handleDownload}>Download CV</span>
+    <span className="mx-auto " onClick={handleDownload}>Curriculum</span>
   );
 };
 
