@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='bg-[#fafafa] py-2 px-5 fixed top-0 z-50'>
+    <nav className='bg-[#fafafa] py-2 px-5 fixed top-0 z-50'>
       <div className="w-screen right-0"><MenuIcon onClick={()=>setIsOpen(!isOpen)}/></div>
       <div  className={`${
           isOpen ? 'h-auto flex space-y-8 opacity-100' : 'h-0 hidden opacity-0'
@@ -16,7 +16,7 @@ const Header = () => {
             <li className={`${isOpen ?'block' :'hidden h-0'}`}>Contact</li>
         </ul>
       </div>
-    </div>
+    </nav>
   )
 }
 
