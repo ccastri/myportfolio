@@ -7,10 +7,10 @@ import CVButton from './_components/CVButton';
 const Hero = () => {
 
   return (
-    <main className='w-screen h-[calc(100vh-40px)] flex relative z-40 sm:overflow-y-hidden border-2 mt-[40px] overflow-x-hidden' >
+    <main className='w-screen h-[calc(100vh-40px)] flex relative z-40 sm:overflow-y-hidden bg-slate-700 border-2 mt-[40px] overflow-x-hidden' >
       
       {/* First triangle */}
-      <div className="-z-10 absolute h-full  bg-[#0F62FE] clip-triangle -rotate-180 overflow-y-hidden w-screen" />
+      <div className=" absolute h-full  bg-[#acbad6] clip-triangle shadow-xl -rotate-180 overflow-y-hidden w-screen" />
       
       {/* Hero section: IMAGE + HERO TEXT AND BUTTONS */}
         <div className='  w-screen    flex items-center space-y-12 sm:space-y-0  flex-col sm::flex-row  pt-12  '>
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
         
         {/* Hero text */}
-        <div className='h-auto sm:h-full  right-0  top-[40%] sm:my-auto sm:top-0 space-y-4 absolute   w-screen sm:w-1/2   px-8 sm:items-center sm:justify-center flex flex-col'>
+        <div className='h-auto sm:h-full  right-0  top-[40%] sm:my-auto sm:top-0 text-gray-200 space-y-4 absolute   w-screen sm:w-1/2   px-8 sm:items-center sm:justify-center flex flex-col'>
           <h1 className='z-50 font-semibold  h-auto text-center text-3xl   '>
               Hi, there!
           </h1>
