@@ -9,8 +9,8 @@ import Image from 'next/image';
 const sliderItems = [
   {'imgBg':"almabyym.png", 'adds':'Ecommerce desinger, builder and consultor', 'repoLink':'https://github.com/ccastri/alma-by-tdi' , 'website':'https://www.almabyyuyumolina.com'},
   {'imgBg':"angular_firebase.png", 'adds':'Real time updated RESTFull services', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
-  {'imgBg':"react-three-fiber.png", 'adds':'The best fron react and its interactivity into the 3D world', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
-  {'imgBg':"knee_prosthesis.png", 'adds':'3D  real-time surgical planning environments design', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
+  {'imgBg':"react-three-fiber.png", 'adds':'TBrought the best from react and its interactivity into the 3D world', 'repoLink':'https://github.com/ccastri/react-three-fiber' , 'website':' https://r3js-vite.vercel.app/'},
+  {'imgBg':"knee_prosthesis.png", 'adds':'Real-time web-socket connection for surgical planning environments design', 'repoLink':'https://github.com/ccastri/THREEJS-basics' , 'website':' https://threejs-basics-sigma.vercel.app/'},
 
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172032.png_big_no_bg.png'},
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172055.png_big_no_bg.png'},
@@ -64,7 +64,11 @@ const Slider = () => {
         // }}
       >
             {/* Use conditional rendering to display the current image */}
-            <div className='absolute w-full h-full flex flex-col z-30 justify-center items-center text-center m-auto border-2 '>
+            <motion.div 
+            initial={{ opacity: 0 }}
+              animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
+              exit={{ opacity: 0 }}
+            className='absolute w-full h-full flex flex-col z-30 justify-center items-center text-center m-auto border-2 '>
               <span className='text-2xl tracking-wider font-bold text-slate-700'>{slide.adds}</span>
               <div className="w-full flex items-center z-40 justify-center space-x-4">
 
@@ -75,7 +79,7 @@ const Slider = () => {
                 <span>View App</span>
               </div>
               </div>
-            </div>
+            </motion.div>
             
             <Image
               className=" w-screen h-screen opacity-60 object-cover cursor-pointer"
