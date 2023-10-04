@@ -21,7 +21,7 @@ const Hero = () => {
               src="/hero.png"
               alt="Camilo Castrillon"
               priority
-              className=" sm:w-auto mx-auto object-cover h-full sm:my-auto "
+              className=" w-auto mx-auto object-cover h-full sm:my-auto "
               width={400}
               height={400}
             />
