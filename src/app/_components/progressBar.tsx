@@ -1,12 +1,19 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Doughnut, Chart } from 'react-chartjs-2';
+import { Doughnut,  } from 'react-chartjs-2';
+import { Chart, registerables  } from 'chart.js';
+Chart.register(...registerables)
+
+interface ICircularProgressBar {
+  items : string | string[];
+}
+type ChartRefType = Chart<'doughnut'> | null;
 
 const CircularProgressBar = () => {
   const [tsProgress, setTsProgress] = useState(0);
   const [jsProgress, setJsProgress] = useState(0);
   const [pythonProgress, setPythonProgress] = useState(0);
 
-  const chartRef = useRef(null); // Reference to the chart instance
+  const chartRef = useRef<ChartRefType|null>(null); // Reference to the chart instance
 
   useEffect(() => {
     const tsInterval = setInterval(() => {
@@ -46,7 +53,8 @@ const CircularProgressBar = () => {
       chartRef.current.data.datasets[0].data = [tsProgress, jsProgress, pythonProgress];
       chartRef.current.update();
     } else {
-      const ctx = document.getElementById('chart-canvas').getContext('2d');
+      const canvas = document.getElementById('chart-canvas') as HTMLCanvasElement
+      const ctx = canvas.getContext('2d') as CanvasRenderingContext2D
       chartRef.current = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -67,9 +75,17 @@ const CircularProgressBar = () => {
           cutout: '50%',
           rotation: 0,
           circumference: 360,
-          plugins: {
+           plugins: {
             legend: {
               display: true,
+            },
+            tooltip: {
+              callbacks: {
+                label: (context) => {
+                  // Show only the label (context.label)
+                  return context.label;
+                },
+              },
             },
           },
           animation: {
