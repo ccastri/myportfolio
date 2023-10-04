@@ -15,13 +15,13 @@ const Hero = () => {
       {/* <div className=" absolute h-full  bg-[#acbad6] clip-triangle shadow-xl -rotate-180 overflow-y-hidden w-screen" /> */}
       
       {/* Hero section: IMAGE + HERO TEXT AND BUTTONS */}
-        <div className='  w-screen  p-4  flex items-center space-y-12 sm:space-y-0  flex-col sm::flex-row relative  '>
+        <div className='  w-full  p-4  flex items-center space-y-12 sm:space-y-0  flex-col sm::flex-row relative  '>
           <div  className="absolute h-1/2  z-40  top-10 justify-center items-center my-auto sm:h-full overflow-y-hidden flex   w-auto  sm:left-0  ">
             <Image
               src="/hero.png"
               alt="Camilo Castrillon"
               priority
-              className=" w-auto mx-auto object-cover h-full sm:my-auto "
+              className=" w-full mx-auto object-cover h-full sm:my-auto "
               width={400}
               height={400}
             />
