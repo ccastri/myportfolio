@@ -1,103 +1,75 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Doughnut } from 'react-chartjs-2';
+import React, { useEffect, useRef, useState } from 'react';
 import { Chart } from 'chart.js';
-// import { Chart } from 'chart.js'; // Import Chart from 'chart.js/auto'
+import { useInView } from 'react-intersection-observer';
 
-// Chart.register(...registerables);
-
-interface ICircularProgressBar {
-  items: string | string[];
+interface ICircularProgressBarProps {
+  title: string;
+  data: {
+    labels: string[];
+    values: number[];
+    bgColors: string[];
+  };
 }
 
-type ChartRefType = Chart| null;
+type ChartRefType = Chart | null;
 
-const CircularProgressBar = () => {
-  const [tsProgress, setTsProgress] = useState(0);
-  const [jsProgress, setJsProgress] = useState(0);
-  const [pythonProgress, setPythonProgress] = useState(0);
-
-  const chartRef = useRef<ChartRefType | null>(null); // Reference to the chart instance
-
-  useEffect(() => {
-    const tsInterval = setInterval(() => {
-      if (tsProgress < 25) {
-        setTsProgress(tsProgress + 1);
-      } else {
-        clearInterval(tsInterval);
-      }
-    }, 30);
-
-    const jsInterval = setInterval(() => {
-      if (jsProgress < 25) {
-        setJsProgress(jsProgress + 1);
-      } else {
-        clearInterval(jsInterval);
-      }
-    }, 30);
-
-    const pythonInterval = setInterval(() => {
-      if (pythonProgress < 50) {
-        setPythonProgress(pythonProgress + 1);
-      } else {
-        clearInterval(pythonInterval);
-      }
-    }, 30);
-
-    return () => {
-      clearInterval(tsInterval);
-      clearInterval(jsInterval);
-      clearInterval(pythonInterval);
-    };
-  }, [tsProgress, jsProgress, pythonProgress]);
+const CircularProgressBar: React.FC<ICircularProgressBarProps> = ({ title, data }) => {
+  const { labels, values, bgColors } = data;
+  const chartRef = useRef<ChartRefType | null>(null);
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [ref, inView, entry] = useInView(); // Capture entry to check if it's out of the viewport
 
   useEffect(() => {
-    // Create or update the chart
-    const canvas = document.getElementById('chart-canvas') as HTMLCanvasElement;
-    if (canvas) {
-      const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
-      if (chartRef.current) {
-        chartRef.current!.data.datasets![0].data = [tsProgress, jsProgress, pythonProgress];
-        chartRef.current.update();
-      } else {
-        chartRef.current = new Chart(ctx, {
-          type: 'doughnut',
-          data: {
-            labels: ['TypeScript', 'JavaScript', 'Python'],
-            datasets: [
-              {
-                data: [tsProgress, jsProgress, pythonProgress],
-                backgroundColor: [
-                  'rgba(75, 192, 192, 0.6)',
-                  'rgba(255, 99, 132, 0.6)',
-                  'rgba(255, 205, 86, 0.6)',
+    if (inView) {
+      if (!isAnimated || (entry && entry.isIntersecting)) {
+        setIsAnimated(true);
+
+        const canvas = document.getElementById(`chart-canvas-${title.replace(/\s/g, '')}`) as HTMLCanvasElement;
+        if (canvas) {
+          const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
+          if (chartRef.current) {
+            chartRef.current!.data.datasets![0].data = values;
+            chartRef.current.update();
+          } else {
+            chartRef.current = new Chart(ctx, {
+              type: 'doughnut',
+              data: {
+                labels,
+                datasets: [
+                  {
+                    data: values,
+                    backgroundColor: bgColors,
+                    borderWidth: 0,
+                  },
                 ],
-                borderWidth: 0,
               },
-            ],
-          },
-          options: {
-            cutoutPercentage: 50,
-            rotation: -0.5 * Math.PI,
-            circumference: 	2 * Math.PI,
-            plugins: {
-              legend: {
-                display: true,
+              options: {
+                cutoutPercentage: 50,
+                rotation: -0.5 * Math.PI,
+                circumference: 2 * Math.PI,
+                plugins: {
+                  legend: {
+                    display: true,
+                  },
+                },
+                animation: {
+                  animateRotate: true,
+                  animateScale: true,
+                },
               },
-            },
-            animation: {
-              animateRotate: true,
-              animateScale: true,
-            },
-          },
-        });
+            });
+          }
+        }
       }
+    } else {
+      setIsAnimated(false); // Reset animation when out of viewport
     }
-  }, [tsProgress, jsProgress, pythonProgress]);
+  }, [values, labels, bgColors, title, inView, isAnimated, entry]);
 
   return (
-    <div className='h-auto'>
-      <h2>Conocimientos en programacion</h2>
-      <canvas id='chart-canvas'></canvas>
+    <div className='h-auto' ref={ref}>
+      <h2>{title}</h2>
+      <canvas id={`chart-canvas-${title.replace(/\s/g, '')}`}></canvas>
     </div>
   );
 };

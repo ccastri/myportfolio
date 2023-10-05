@@ -41,7 +41,7 @@ const Slider = () => {
 
 
   return (
-    <div className="w-screen relative  h-screen md:h-full  flex flex-col">
+    <div className="w-screen relative  h-screen md:h-full  flex flex-col ">
       {/* <h1>Slider works</h1> */}
       <div
         ref={sliderRef}
@@ -64,22 +64,22 @@ const Slider = () => {
         // }}
       >
             {/* Use conditional rendering to display the current image */}
-            <motion.div 
-            initial={{ opacity: 0 }}
-              animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
-              exit={{ opacity: 0 }}
-            className='absolute w-full h-full flex flex-col z-30 justify-center items-center text-center m-auto border-2 '>
-              <span className='text-2xl tracking-wider font-bold text-slate-700'>{slide.adds}</span>
+            <div 
+            // initial={{ opacity: 0 }}
+            //   animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
+            //   exit={{ opacity: 0 }}
+            className='hover:opacity-90 opacity-30 w-6/12  bg-[#fafafa] absolute   z-40 py-12 flex  flex-col  justify-center  top-[40%] my-auto border-2 '>
+              <span className='text-2xl tracking-wider text-center font-bold text-slate-700'>{slide.adds}</span>
               <div className="w-full flex items-center z-40 justify-center space-x-4">
 
-              <div className="z-40 w-auto h-auto cursor-pointer hover:text-[#fafafa] border-2 bg-[#fafafa] text-slate-300 hover:bg-slate-300 px-4 py-2"  onClick={()=>window.open(slide.repoLink, '_blank')}>
+              <div className="z-40 w-auto h-auto cursor-pointer hover:text-[#fafafa] border-2 bg-[#fafafa]  hover:bg-[#a1a1a1a1] px-4 py-2"  onClick={()=>window.open(slide.repoLink, '_blank')}>
                 <span>View repo</span>
               </div>
               <div className="z-40 w-auto h-auto cursor-pointer  border-2 px-4 py-2 hover:bg-[#fafafa] hover:text-slate-300" onClick={()=>window.open(slide.website, '_blank')}>
                 <span>View App</span>
               </div>
               </div>
-            </motion.div>
+            </div>
             
             <Image
               className=" w-screen h-screen opacity-60 object-cover cursor-pointer"
