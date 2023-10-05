@@ -3,14 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
-  const bgAlma= ()=> (<div className="w-full z-50 flex bg-red-500 h-full">
-<h1>Alma works</h1>
-  </div>)
 const sliderItems = [
-  {'imgBg':"almabyym.png", 'adds':'Ecommerce desinger, builder and consultor', 'repoLink':'https://github.com/ccastri/alma-by-tdi' , 'website':'https://www.almabyyuyumolina.com'},
-  {'imgBg':"angular_firebase.png", 'adds':'Real time updated RESTFull services', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
-  {'imgBg':"react-three-fiber.png", 'adds':'TBrought the best from react and its interactivity into the 3D world', 'repoLink':'https://github.com/ccastri/react-three-fiber' , 'website':' https://r3js-vite.vercel.app/'},
-  {'imgBg':"knee_prosthesis.png", 'adds':'Real-time web-socket connection for surgical planning environments design', 'repoLink':'https://github.com/ccastri/THREEJS-basics' , 'website':' https://threejs-basics-sigma.vercel.app/'},
+  {'imgBg':"almabyym.png", 'adds':'Diseño y consultoria de sistemas e-commerce', 'repoLink':'https://github.com/ccastri/alma-by-tdi' , 'website':'https://www.almabyyuyumolina.com'},
+  {'imgBg':"angular_firebase.png", 'adds':'Servicios RESTFull para actualizaciones en tiempo real', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
+  {'imgBg':"react-three-fiber.png", 'adds':'Aplicaciones 3D: Modelado, interactividad y procesamiento ', 'repoLink':'https://github.com/ccastri/react-three-fiber' , 'website':' https://r3js-vite.vercel.app/'},
+  {'imgBg':"knee_prosthesis.png", 'adds':'Visualizacion y construccion de entornos medicos en 3D', 'repoLink':'https://github.com/ccastri/THREEJS-basics' , 'website':' https://threejs-basics-sigma.vercel.app/'},
 
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172032.png_big_no_bg.png'},
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172055.png_big_no_bg.png'},
@@ -68,15 +65,15 @@ const Slider = () => {
             // initial={{ opacity: 0 }}
             //   animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
             //   exit={{ opacity: 0 }}
-            className='hover:opacity-90 opacity-30 w-6/12  bg-[#fafafa] absolute   z-40 py-12 flex  flex-col  justify-center  top-[40%] my-auto border-2 '>
-              <span className='text-2xl tracking-wider text-center font-bold text-slate-700'>{slide.adds}</span>
+            className='hover:opacity-90 opacity-30 w-8/12  bg-[#fafafa] absolute   z-40 py-12 flex  flex-col  justify-center  top-[25%] my-auto border-2 '>
+              <span className='text-2xl tracking-wider text-center pb-6 font-bold text-slate-700'>{slide.adds}</span>
               <div className="w-full flex items-center z-40 justify-center space-x-4">
 
               <div className="z-40 w-auto h-auto cursor-pointer hover:text-[#fafafa] border-2 bg-[#fafafa]  hover:bg-[#a1a1a1a1] px-4 py-2"  onClick={()=>window.open(slide.repoLink, '_blank')}>
-                <span>View repo</span>
+                <span>Ver repo</span>
               </div>
               <div className="z-40 w-auto h-auto cursor-pointer  border-2 px-4 py-2 hover:bg-[#fafafa] hover:text-slate-300" onClick={()=>window.open(slide.website, '_blank')}>
-                <span>View App</span>
+                <span>Ver App</span>
               </div>
               </div>
             </div>

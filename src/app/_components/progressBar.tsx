@@ -67,8 +67,8 @@ const CircularProgressBar: React.FC<ICircularProgressBarProps> = ({ title, data 
   }, [values, labels, bgColors, title, inView, isAnimated, entry]);
 
   return (
-    <div className='h-auto' ref={ref}>
-      <h2>{title}</h2>
+    <div className='h-full w-full' ref={ref}>
+      <h2 className="text-center mx-auto">{title}</h2>
       <canvas id={`chart-canvas-${title.replace(/\s/g, '')}`}></canvas>
     </div>
   );
