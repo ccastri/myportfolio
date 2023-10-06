@@ -5,22 +5,31 @@ import OtherSkills from './_components/OtherSkills';
 import Slider from './_components/Slider';
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import About from './_components/About';
 
 export default function Home() {
+  const aboutControls = useAnimation();
   const stackControls = useAnimation();
   const sliderControls = useAnimation();
   const otherSkillsControls = useAnimation();
 
   useEffect(() => {
-    const stackOffset = window.innerHeight / 2;
-    const sliderOffset = window.innerHeight * 1.5; // Change this offset as needed
+    const aboutOffset = window.innerHeight / 2;
+    const stackOffset = window.innerHeight * 1.5;
+    const sliderOffset = window.innerHeight * 2; // Change this offset as needed
     const otherSkillsOffset = window.innerHeight * 2.5; // Change this offset as needed
 
     const scrollListener = () => {
+      const isAboutReached = window.scrollY > aboutOffset;
       const isStackReached = window.scrollY > stackOffset;
       const isSliderReached = window.scrollY > sliderOffset;
       const isOtherSkillsReached = window.scrollY > otherSkillsOffset;
 
+      if (isAboutReached) {
+        aboutControls.start({ opacity: 1 });
+      } else {
+        aboutControls.start({ opacity: 0 });
+      }
       if (isStackReached) {
         stackControls.start({ opacity: 1 });
       } else {
@@ -44,7 +53,7 @@ export default function Home() {
     return () => {
       window.removeEventListener('scroll', scrollListener);
     };
-  }, [stackControls, sliderControls, otherSkillsControls]);
+  }, [aboutControls, stackControls, sliderControls, otherSkillsControls]);
 
   return (
     <main className="flex flex-col items-center justify-between">
@@ -52,6 +61,11 @@ export default function Home() {
 
       <Hero  />
       </div>
+      <motion.div 
+      id='about'
+      initial={{ opacity: 0 }} animate={aboutControls}>
+        <About />
+      </motion.div>
       <motion.div 
       id='stack'
       initial={{ opacity: 0 }} animate={stackControls}>

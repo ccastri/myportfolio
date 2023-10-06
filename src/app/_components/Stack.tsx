@@ -6,16 +6,17 @@ const Stack = () => {
     <main className="h-screen flex relative text-[#fafafa] bg-black flex-col items-center text-center justify-center w-screen border-2  ">
          <div className="absolute  w-full h-full flex flex-col items-center justify-center space-y-32 sm:space-y-44 z-10">
          <Image className="w-auto absolute h-auto  object-cover z-10 " src="/hip.gif" alt="Unity Logo" width={1080} height={980}/>
-         <h1 className='absolute text-center z-30  font-bold text-slate-800 text-xs animate-rotate360'>3D model from a <br/> <span className='text-lg text-slate-700'>real human brain</span></h1>
+         {/* <h1 className='absolute text-center z-30  font-bold text-slate-800 text-xs animate-rotate360'>3D model from a <br/> <span className='text-lg text-slate-700'>real human brain</span></h1> */}
          </div>
         {/* <div className="-z-10 absolute h-full   bg-[] clip-triangle -rotate-180 overflow-y-hidden w-screen" /> */}
         {/* <div className="-z-10 absolute h-full  bg-[#0F62FE] clip-triangle  -rotate-270 overflow-y-hidden w-screen" /> */}
-        <div className='group opacity-10 z-40 w-full h-full flex justify-between py-12  flex-col sm:px-8 hover:opacity-100'>
+        <div className='group opacity-10 z-40 w-full h-full flex justify-between py-12  flex-col hover:opacity-100'>
 <>
         <h2 className='text-[#fafafa] text-2xl h-2 z-40'>Proyecto actual</h2>
-        <span className="m-0 py-0 px-12">Sistema de visualización DICOM 3D: Interoperabilidad (HL7 FHIR) y realidad virtual (Unity)</span>
+        <p className="m-0 flex py-0 px-20 w-full">plataforma paciente para procedimientos quirugicos: 
+        seguimiento en tiempo real, interoperabilidad (HL7 FHIR) y realidad virtual (Unity) en planeacion quirugica y soporte tecnológico para cirugia</p>
 </>
-      <div className='group sm:flex grid grid-cols-3 opacity-20 bottom-0 items-center gap-4 mx-auto text-center justify-center hover:opacity-70 z-20 py-4   w-full sm:justify-between bg-[#fafafa] border-2 rounded-md sm:p-8  '>
+      <div className='group sm:flex grid grid-cols-3 opacity-20 bottom-0 items-center gap-4 mx-auto text-center justify-center hover:opacity-70 z-20 py-4   w-full sm:justify-between bg-[#fafafa] border-2 rounded-md   '>
          <Image className="mx-auto text-center hover:scale-105 transition-all duration-200 hover:ease-in-out transform" src="/unity.svg" alt="Unity Logo" width={50} height={50}/>
          <Image className="mx-auto text-center hover:scale-105 transition-all duration-200 hover:ease-in-out transform" src="/3d-slicer.png" alt="Slicer Logo" width={70} height={70}/>
          <Image className="mx-auto text-center hover:scale-105 transition-all duration-200 hover:ease-in-out transform" src="/Opengl-logo.svg" alt="Slicer Logo" width={90} height={90}/>
