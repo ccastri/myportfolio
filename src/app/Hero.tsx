@@ -28,7 +28,7 @@ const Hero = () => {
           </div> */}
 
         {/* Hero text */}
-        <div className='h-full items-center  w-full  sm:my-auto  pt-8 text-[#fafafa]  overflow-y-hidden    px-8 md:px-24 sm:items-center sm:justify-center flex flex-col'>
+        <div className='h-full items-center  w-full  sm:my-auto  pt-8 text-[#fafafa]  overflow-y-hidden pb-6   px-8 md:px-24 sm:items-center sm:justify-center flex flex-col'>
           <h1 className='z-40 font-semibold   md:w-full text-3xl   '>
               Hola, Bienvenidos!
           </h1>
@@ -37,7 +37,7 @@ const Hero = () => {
           <span className='text-blue-500 font-bold'> Tambien soy experto en salud y teconología.</span> <span className= "w-full m-0  font-bold p-0 text-red-500"><LocationOnIcon/> Actualmente vivo en Cali, Colombia. </span>
            Construyo apps web, mobiles y basadas en IA. Mi mision es contribuir a actualizar la infraestuctura tecnológica en salud... <>O de tu empresa</>
           </p>
-          <div className='space-x-4 w-auto h-auto  my-4  text-center flex '>
+          <div className='space-x-4 w-auto h-auto  pt-6 text-center flex '>
 
           {/*GITHUB AND CV BUTTON */}
             <div 
