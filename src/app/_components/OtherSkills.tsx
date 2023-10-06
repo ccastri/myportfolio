@@ -3,8 +3,10 @@ import CircularProgressBar from './progressBar';
 
 const OtherSkills = () => {
   return (
-    <div className='sm:h-[50vh] h-full space-y-8 p-8 flex flex-col sm:flex-row bg-slate-300 w-screen items-center justify-center'>
+    <div className='sm:h-[50vh] h-full space-y-8 p-8 flex flex-col  bg-slate-300 w-screen items-center justify-center'>
       <h1 className="text-2xl">Un poco de mi experiencia y habilidades...</h1>
+      <div className="flex sm:flex-row flex-col">
+
             <CircularProgressBar
         title='Lenguajes de programacion'
         data={{
@@ -29,6 +31,7 @@ const OtherSkills = () => {
           bgColors: ["#dddddd", "#eeeeee", "#ffffff"],
         }}
       />
+      </div>
     </div>
   );
 }

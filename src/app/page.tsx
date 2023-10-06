@@ -15,9 +15,9 @@ export default function Home() {
 
   useEffect(() => {
     const aboutOffset = window.innerHeight / 2;
-    const stackOffset = window.innerHeight * 2;
-    const sliderOffset = window.innerHeight * 3.2; // Change this offset as needed
-    const otherSkillsOffset = window.innerHeight * 4.2; // Change this offset as needed
+    const stackOffset = window.innerHeight * 1.7;
+    const sliderOffset = window.innerHeight * 2.7; // Change this offset as needed
+    const otherSkillsOffset = window.innerHeight * 3.8; // Change this offset as needed
 
     const scrollListener = () => {
       const isAboutReached = window.scrollY > aboutOffset;
