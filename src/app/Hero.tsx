@@ -9,14 +9,14 @@ import DownloadIcon from '@mui/icons-material/Download';
 const Hero = () => {
 
   return (
-    <main className='w-screen h-screen flex relative z-40 sm:overflow-y-hidden  border-2 overflow-x-hidden' >
+    <main className='w-screen h-full pb-8  z-40 sm:overflow-y-hidden  border-2 overflow-x-hidden bg-[#96a396bb]' >
       
       {/* First triangle */}
       {/* <div className=" absolute h-full  bg-[#acbad6] clip-triangle shadow-xl -rotate-180 overflow-y-hidden w-screen" /> */}
       
       {/* Hero section: IMAGE + HERO TEXT AND BUTTONS */}
-        <div className='  w-full  p-4  flex items-center space-y-12 sm:space-y-0  flex-col sm::flex-row relative  '>
-          <div  className="absolute h-1/2  z-40  top-10 justify-center items-center my-auto sm:h-full overflow-y-hidden flex   w-auto  sm:left-0  ">
+        {/* <div className='  w-full  p-4  flex items-center space-y-12 sm:space-y-0  flex-col sm::flex-row relative  '> */}
+          {/* <div  className="absolute h-1/2  z-40  top-10 justify-center items-center my-auto sm:h-full overflow-y-hidden flex   w-auto  sm:left-0  ">
             <Image
               src="/hero.png"
               alt="Camilo Castrillon"
@@ -25,17 +25,19 @@ const Hero = () => {
               width={400}
               height={400}
             />
-          </div>
+          </div> */}
 
         {/* Hero text */}
-        <div className='h-1/2 sm:h-full bottom-0 w-full text-center right-0 sm:my-auto sm:top-0 pt-8 text-slate-500 bg-[#acbad6] space-y-4 absolute   w-screen sm:w-1/2   px-8 sm:items-center sm:justify-center flex flex-col'>
-          <h1 className='z-50 font-semibold  h-6 text-center text-xl   '>
-              Hola, Bienvenido!
+        <div className='h-auto bottom-0 w-full  right-0 sm:my-auto sm:top-0 pt-8 text-[#fafafa] space-y-4      px-8 sm:items-center sm:justify-start flex flex-col'>
+          <h1 className='z-50 font-semibold    text-3xl   '>
+              Hola, Bienvenidos!
           </h1>
-          <p className='text-md flex flex-col text-center  w-full '>Me llamo Camilo Castrillón. <span className="font-bold text-gray-600">Soy Ingeniero biomédico y desarrollo software:</span> apps web, mobiles y de IA
-            <span className= "w-full m-0 text-center font-bold p-0 text-blue-500"><LocationOnIcon/> Actualmente en Cali, Colombia.</span>
-          </p>
-          <div className='space-x-4 w-auto h-12 text-center flex m-auto'>
+          <h2 className='text-md flex flex-col text-2xl w-full '>
+            Me llamo Camilo Castrillón. <span className="font-bold text-yellow-300">Soy Ingeniero biomédico y desarrollo software.</span> 
+          <span className='text-blue-500 font-bold'>Tambien soy experto en salud y teconología.</span> <span className= "w-full m-0  font-bold p-0 text-red-500"><LocationOnIcon/> Actualmente vivo en Cali, Colombia.</span>
+          Construyo apps web, mobiles y basadas en IA. Mi mision es contribuir a actualizar la infraestuctura tecnológica en salud... <>O de tu empresa</>
+          </h2>
+          <div className='space-x-4 w-auto h-12 text-center flex '>
 
           {/*GITHUB AND CV BUTTON */}
             <div 
@@ -48,7 +50,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-      </div>
+      {/* </div> */}
     </main>
   );
 }
