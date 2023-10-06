@@ -28,7 +28,7 @@ const Hero = () => {
           </div> */}
 
         {/* Hero text */}
-        <div className='h-full sm:h-screen items-center  w-full  sm:my-auto  pt-8 text-slate-700  overflow-y-hidden pb-6   px-8 md:px-24 sm:items-center sm:justify-center flex flex-col'>
+        <div className='h-screen items-center  w-full  sm:my-auto  pt-8 text-slate-700  overflow-y-hidden pb-6   px-8 md:px-24 sm:items-center sm:justify-center flex flex-col'>
           <h1 className='z-40 font-semibold   md:w-full text-3xl   '>
               Hola, Bienvenidos!
           </h1>
@@ -36,7 +36,7 @@ const Hero = () => {
             <div className=" mt-3  4 ml-28 absolute h-4 opacity-60 bg-green-500 w-48 -z-10"/>
             Me llamo
             <span className="z-20 font-semibold"> Camilo Castrillón.</span> <span className="font-bold text-yellow-500">Soy Ingeniero biomédico,</span> 
-          <span className='text-blue-500 font-semibold'> experto en salud y teconología.</span> <span className= "w-full m-0  font-bold p-0 text-red-500"><LocationOnIcon/> Actualmente vivo en Cali, Colombia. </span>
+          <span className='text-blue-500 font-semibold'> experto en salud y teconología. <br/></span> <span className= "w-full m-0  font-bold p-0 text-red-500"> <LocationOnIcon/> Actualmente vivo en Cali, Colombia. </span>
            Desarrollo apps web, móviles y basadas en IA con la mision de modernizar la infraestuctura tecnológica en salud... 
            {/* <>O de tu empresa, cualquiera que sea</> */}
           </p>
