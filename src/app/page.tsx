@@ -17,7 +17,7 @@ export default function Home() {
     const aboutOffset = window.innerHeight / 2;
     const stackOffset = window.innerHeight * 1.7;
     const sliderOffset = window.innerHeight * 2.7; // Change this offset as needed
-    const otherSkillsOffset = window.innerHeight * 3.8; // Change this offset as needed
+    const otherSkillsOffset = window.innerHeight * 3.9; // Change this offset as needed
 
     const scrollListener = () => {
       const isAboutReached = window.scrollY > aboutOffset;
