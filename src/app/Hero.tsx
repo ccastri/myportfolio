@@ -33,10 +33,10 @@ const Hero = () => {
               Hola, Bienvenidos!
           </h1>
           <p className='text-md z-20 relative   text-2xl w-full '>
-            <div className=" mt-3  4 ml-28 absolute h-4 opacity-60 bg-green-500 w-48 -z-10"/>
+            <span className=" mt-3  4 ml-28 absolute h-4 opacity-60 bg-green-500 w-48 -z-10"/>
             Me llamo
             <span className="z-20 font-semibold"> Camilo Castrillón.</span> <span className="font-bold text-yellow-500">Soy Ingeniero biomédico,</span> 
-          <span className='text-blue-500 font-semibold'> experto en salud y teconología. <br/></span> <span className= "w-full m-0  font-bold p-0 text-red-500"> <LocationOnIcon/> Actualmente vivo en Cali, Colombia. </span>
+          <span className='text-blue-500 font-semibold'> experto en salud y teconología. </span> <br/><span className= "w-full m-0  font-bold p-0 text-red-500"> <LocationOnIcon/> Actualmente vivo en Cali, Colombia. </span>
            Desarrollo apps web, móviles y basadas en IA con la mision de modernizar la infraestuctura tecnológica en salud... 
            {/* <>O de tu empresa, cualquiera que sea</> */}
           </p>
