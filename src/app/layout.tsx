@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="m-0 p-0 overflow-x-hidden">
+    <html lang="en" className="m-0 p-0 overflow-x-hidden bg-slate-400">
       <body className={`${raleway.className} m-0 p-0 pb-[60px] overflow-x-hidden text-slate-700 bg-[#fafafa
       ]`}>
         <Header/>
