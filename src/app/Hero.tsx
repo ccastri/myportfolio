@@ -9,7 +9,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 const Hero = () => {
 
   return (
-    <main className='w-screen md:h-screen h-full  md:space-y-6 md:items-center pb-8 md:px-16  z-40 sm:overflow-y-hidden flex overflow-x-hidden bg-[#fffffff1]' >
+    <main className='w-10/12 mx-auto md:h-screen h-full rounded-3xl m-8 text-sm  bg-[#272626] p-2 shadow-xl  shadow-red-500 border-8 border-red-500 md:space-y-6 md:items-center  md:px-16  z-40  flex overflow-x-hidden bg-[#fffffff1]' >
       
       {/* First triangle */}
       {/* <div className=" absolute h-full  bg-[#acbad6] clip-triangle shadow-xl -rotate-180 overflow-y-hidden w-screen" /> */}
@@ -28,11 +28,11 @@ const Hero = () => {
           </div> */}
 
         {/* Hero text */}
-        <div className='h-screen items-center  w-full  sm:my-auto  pt-8 text-slate-700  overflow-y-hidden pb-6   px-8 md:px-24 sm:items-center sm:justify-center flex flex-col'>
-          <h1 className='z-40 font-semibold   md:w-full text-3xl   '>
+        <div className='h-full  items-center rounded-3xl border-8 border-[#131313]  bg-[#f1f2f2]  w-full  sm:my-auto  pt-12 text-slate-700  overflow-y-hidden   px-8  sm:items-center sm:justify-center  overflow-x-hidden p-4 flex flex-col'>
+          <h1 className='z-40 font-semibold  px-4 ml-4 md:w-full text-3xl   '>
               Hola, Bienvenidos!
           </h1>
-          <p className='text-md z-20 relative   text-2xl w-full '>
+          <p className='text-md z-20 relative   text-25xl w-full '>
             <span className=" mt-3  4 ml-28 absolute h-4 opacity-60 bg-green-500 w-48 -z-10"/>
             Me llamo
             <span className="z-20 font-semibold"> Camilo Castrillón.</span> <span className="font-bold text-yellow-500">Soy Ingeniero biomédico,</span> 
@@ -40,7 +40,7 @@ const Hero = () => {
            Desarrollo apps web, móviles y basadas en IA con la mision de modernizar la infraestuctura tecnológica en salud... 
            {/* <>O de tu empresa, cualquiera que sea</> */}
           </p>
-          <div className='space-x-4 w-auto h-auto  pt-6 text-center flex '>
+          <div className='space-x-4 w-auto h-auto  py-6 text-center flex '>
 
           {/*GITHUB AND CV BUTTON */}
             <div 
@@ -52,8 +52,10 @@ const Hero = () => {
                 <CVButton/> <DownloadIcon className=" group-hover:text-s[#fafaa]"/>
               </div>
             </div>
+            <div className='w-6/12 pt-2 bottom-0 h-2 bg-gray-300 rounded-full'/>
           </div>
       {/* </div> */}
+      {/* <div className='h-2 w-8/12 flex flex-col absolute  bg-gray-400'/> */}
     </main>
   );
 }
