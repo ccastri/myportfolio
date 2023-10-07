@@ -28,7 +28,7 @@ const Hero = () => {
           </div> */}
 
         {/* Hero text */}
-        <div className='h-full  items-center rounded-3xl border-8 border-[#131313]  bg-[#f1f2f2]  w-full  sm:my-auto  pt-12 text-slate-700  overflow-y-hidden   px-8  sm:items-center sm:justify-center  overflow-x-hidden p-4 flex flex-col'>
+        <div className='h-full  items-center rounded-3xl border-8 border-[#131313]  bg-[#f1f2f2]  w-full  sm:my-auto  pt-12 text-slate-700  overflow-y-hidden     sm:items-center sm:justify-center  overflow-x-hidden p-4 flex flex-col'>
           <h1 className='z-40 font-semibold  px-4 ml-4 md:w-full text-3xl   '>
               Hola, Bienvenidos!
           </h1>
