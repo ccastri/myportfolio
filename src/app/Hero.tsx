@@ -9,7 +9,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 const Hero = () => {
 
   return (
-    <main className='w-10/12 mx-auto md:h-screen h-full rounded-3xl m-8 text-sm  bg-[#272626] p-2 shadow-2xl shadow-blur-12  shadow-red-500 border-8 border-red-500 md:space-y-6 md:items-center  md:px-16  z-40  flex overflow-x-hidden bg-[#fffffff1]' >
+    <main className='w-10/12 mx-auto md:h-screen h-full rounded-3xl m-8 text-sm  bg-[#1a1a1a] p-2 shadow-2xl shadow-blur-12  shadow-red-500 border-8 border-red-500 md:space-y-6 md:items-center  md:px-16  z-40  flex overflow-x-hidden bg-[#fffffff1]' >
       
       {/* First triangle */}
       {/* <div className=" absolute h-full  bg-[#acbad6] clip-triangle shadow-xl -rotate-180 overflow-y-hidden w-screen" /> */}
