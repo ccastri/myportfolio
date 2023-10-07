@@ -9,16 +9,16 @@ import DownloadIcon from '@mui/icons-material/Download';
 const Hero = () => {
   
   return (
-    <div className="flex h-screen group z-30 w-screen py-20 mb-64 relative hover:scale-105   hover:ease-in-out duration-200 transition-all transform ">
-          <div className='z-40   flex justify-center px-1 py-3 space-x-2 items-center mx-auto bg-[#1a1a1a] h-4 top-28 left-48 w-3/12 rounded-full absolute'>
+    <div className="flex h-screen group hover:py-6 z-30 w-screen  pl-6 sm:mb-64 relative hover:scale-105   hover:ease-in-out duration-200 transition-all transform ">
+          <div className='z-40 group-hover md:h-44 md:w-4  sm:mx-auto flex md:flex-col justify-center sm:justify-between sm:space-y-2 px-1 py-2 space-x-2 items-center mx-auto bg-[#1a1a1a] h-4 top-32 sm:top-44 left-40 sm:left-48  w-3/12 rounded-full absolute'>
             
-            <span className="rounded-full bg-slate-600 w-12 h-2"></span>
+            <span className="rounded-full bg-slate-600 ml-1 w-12 h-2 mx-auto sm:w-2 sm:h-12"></span>
             
-            <span className="rounded-full bg-slate-600 w-2 h-2"></span>
+            <span className="rounded-full bg-slate-600 w-2 sm:mr-6 h-2"></span>
           </div>
-    <main className='w-10/12   relative hover:scale-105 h-screen  hover:ease-in-out sm:mt:0  mb-28    mx-auto  my-auto justify-center items-center rounded-3xl m-8 text-sm  bg-[#1a1a1a] p-1 shadow-2xl shadow-blur-12  shadow-red-500 border-4  border-red-500 md:space-y-6 md:items-center  md:px-16  z-30  flex flex-col  ' >
+    <main className='w-9/12 sm:h-screen  relative group-hover:scale-105 h-auto py-3 group-hover:ease-in-out sm:mt:0     mx-auto  my-auto justify-center items-center rounded-3xl m-12 text-sm  bg-[#1a1a1a] p-1 shadow-2xl shadow-blur-12  shadow-red-500 border-2 border-blur-md border-red-500 md:space-y-6 md:items-center  md:px-8  z-30  flex flex-col  ' >
         {/* Hero text */}
-        <div className='h-full bottom-0 z-40 relative items-end justify-center rounded-3xl border-4 border-[#1a1a1a]  bg-[#f1f2f2]  w-full    text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
+        <div className='h-full bottom-0 z-40 relative items-end justify-center rounded-3xl border-1 border-blur-sm border-[#1a1a1a]  bg-[#f1f2f2]  w-full    text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
           <h1 className='z-40 font-semibold   px-4 ml-4 md:w-full text-2xl sm:text-3xl   '>
               Hola, Bienvenidos!
           </h1>
@@ -47,7 +47,7 @@ const Hero = () => {
       {/* </div> */}
       {/* <div className='h-2 w-8/12 flex flex-col absolute  bg-gray-400'/> */}
     </main>
-      <div className='h-full w-10/12 p-16 mx-2 mb-6 mt-2 top-17 shadow-4  shadow-xl  group-hover:scale-105  blur-sm border-8 bg-red-500 border-red-500 absolute -z-20  border-l-none border-b-none rounded-3xl   ml-10 lg:ml-28 lg:mb-62 lg:pl-4'/>
+      <div className='h-92 sm:h-screen max-h-screen top-28 bottom-28 w-9/12  mx-2    shadow-2  shadow-md  group-hover:scale-105  blur-sm border-4 bg-red-500 border-red-500 absolute -z-20  border-l-none border-b-none rounded-3xl   ml-10 sm:ml-14 lg:ml-28 lg:mb-62 lg:pl-4'/>
       </div>
   );
 }
