@@ -29,10 +29,10 @@ const Hero = () => {
 
         {/* Hero text */}
         <div className='h-full  items-center rounded-3xl border-8 border-[#1a1a1a]  bg-[#f1f2f2]  w-full  sm:my-auto  pt-12 text-slate-700  overflow-y-hidden     sm:items-center sm:justify-center  overflow-x-hidden p-4 flex flex-col'>
-          <h1 className='z-40 font-semibold  px-4 ml-4 md:w-full text-3xl   '>
+          <h1 className='z-40 font-semibold  px-4 ml-4 md:w-full text-2xl sm:text-3xl   '>
               Hola, Bienvenidos!
           </h1>
-          <p className='text-md z-20 relative   text-25xl w-full '>
+          <p className='text-md z-20 relative   text-xl sm:text-25xl w-full '>
             <span className=" mt-3  4 ml-28 absolute h-4 opacity-60 bg-green-500 w-48 -z-10"/>
             Me llamo
             <span className="z-20 font-semibold"> Camilo Castrillón.</span> <span className="font-bold text-yellow-500">Soy Ingeniero biomédico,</span> 
