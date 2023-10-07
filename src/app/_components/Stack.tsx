@@ -10,7 +10,7 @@ const Stack = () => {
          </div>
         {/* <div className="-z-10 absolute h-full   bg-[] clip-triangle -rotate-180 overflow-y-hidden w-screen" /> */}
         {/* <div className="-z-10 absolute h-full  bg-[#0F62FE] clip-triangle  -rotate-270 overflow-y-hidden w-screen" /> */}
-        <div className='group  opacity-10 hover:bg-slate-100 hover:rounded-xl relative text-slate-700 z-40 w-full h-full flex justify-evenly py-4  flex-col hover:opacity-100'>
+        <div className='group  duration-200 transition-all hover:ease-in-out opacity-10 hover:bg-slate-100 hover:rounded-xl relative text-slate-700 z-40 w-full h-full flex justify-evenly py-4  flex-col hover:opacity-100'>
 <div className="absolute  group-hover:w-48  top-40  sm:hidden h-2 ml-28 opacity-10 group-hover:opacity-100 w-0 mt-5  transition-all duration-500 group-hover:ease-in-out  bg-green-500 -z-20" />
         <h2 className='text-2xl h-2 w-auto m-0 z-40'> Proyecto actual</h2>
         <p className="m-0  py-0 px-4 md:px-44 mx-auto md:w-3/4 z-40 w-full">plataforma paciente para procedimientos quirugicos: 

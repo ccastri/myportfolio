@@ -23,11 +23,11 @@ const Footer = () => {
       <h2 className='md:text-center left-0 w-full text-md line-through'> ¿No sabes cómo hacerla realidad?</h2>
       <h2 className=" text-2xl">Hablemos, quisiera ayudarte a<span className="font-bold"> realizar tus sueños!!</span></h2>
       </>
-      <div className="w-full items-center flex ">
+      <div className="w-screen items-center flex ">
 
-      <div className="cursor-pointer hover:bg-blue-400 hover:text-[#fafafa] rounded w-36 px-4 m-auto flex space-x-2 py-3 bg-[#fafafa] border-2"><LinkedInIcon onClick={()=>window.open('https://www.linkedin.com/camilo-castrillonn', '_blank')}/><span className=" w-full">LinkedIn</span></div>
-      <div className="cursor-pointer hover:bg-slate-700 hover:text-[#fafafa] rounded w-36 px-4 m-auto flex space-x-2 py-3 bg-[#fafafa] border-2"><GitHubIcon onClick={()=>window.open('https://www.github.com/ccastri', '_blank')}/><span className=" w-full">Github</span></div>
-      <div className="cursor-pointer hover:bg-green-500 hover:text-[#fafafa] rounded w-36 px-4 m-auto flex space-x-2 py-3 bg-[#fafafa] border-2"><WhatsAppIcon onClick={()=>window.open(generateWhatsAppLink(), '_blank')}/><span className=" w-full">WhatsApp</span></div>
+      <div className="cursor-pointer hover:text-blue-400  rounded w-36 px-4 m-auto flex space-x-2 py-3 hover:underline"><LinkedInIcon onClick={()=>window.open('https://www.linkedin.com/camilo-castrillonn', '_blank')}/><span className=" w-full">LinkedIn</span></div>
+      <div className="cursor-pointer hover:text-gray-500  rounded w-36 px-4 m-auto flex space-x-2 py-3 hover:underline"><GitHubIcon onClick={()=>window.open('https://www.github.com/ccastri', '_blank')}/><span className=" w-full">Github</span></div>
+      <div className="cursor-pointer hover:text-green-500 rounded w-36 px-4 m-auto flex space-x-2 py-3 hover:underline"><WhatsAppIcon onClick={()=>window.open(generateWhatsAppLink(), '_blank')}/><span className=" w-full">WhatsApp</span></div>
 
       </div>
     </main>

@@ -3,7 +3,7 @@ import CircularProgressBar from './progressBar';
 
 const OtherSkills = () => {
   return (
-    <div className=' h-full space-y-16 p-8 py-20 flex flex-col  bg-[#F5F5F5] w-screen items-center justify-center'>
+    <div className=' h-full space-y-16 p-8 py-20 flex flex-col  bg-[#F1F1F1] w-screen items-center justify-center'>
       <h1 className="text-2xl">Un poco de mi experiencia y habilidades...</h1>
       <div className="flex sm:flex-row space-y-16 flex-col">
 
