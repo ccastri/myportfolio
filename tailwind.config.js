@@ -24,7 +24,8 @@ module.exports = {
         'lg': '1.125rem',    // Large
         'xl': '1.25rem',     // Extra Large
         '2xl': '1.5rem',     // 2X Large
-        '3xl': '3.5rem',     // 2X Large
+        '3xl': '3.5rem',
+        '25xl': '1.8rem',     // 2X Large
         // Add more font sizes as needed
       },
     },

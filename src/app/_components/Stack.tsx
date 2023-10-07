@@ -5,7 +5,7 @@ const Stack = () => {
   return (
     <main className="h-screen flex relative text-[#fafafa] bg-black flex-col items-center text-center justify-center w-screen border-2  ">
          <div className="absolute  w-full h-full flex flex-col items-center justify-center  z-10">
-         <Image className="w-auto absolute h-auto bg-red-500 cursor-pointer  object-cover z-10 " src="/gif-3.gif" alt="hip gif" width={1080} height={980}/>
+         <Image className="w-auto absolute h-auto cursor-pointer  object-cover z-10 " src="/gif-3.gif" alt="hip gif" width={1080} height={980}/>
          {/* <h1 className='absolute text-center z-30  font-bold text-slate-800 text-xs animate-rotate360'>3D model from a <br/> <span className='text-lg text-slate-700'>real human brain</span></h1> */}
          </div>
         {/* <div className="-z-10 absolute h-full   bg-[] clip-triangle -rotate-180 overflow-y-hidden w-screen" /> */}
