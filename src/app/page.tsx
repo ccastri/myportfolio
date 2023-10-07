@@ -6,6 +6,8 @@ import Slider from './_components/Slider';
 import { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import About from './_components/About';
+import Product from './_components/Product';
+import Services from './_components/Services';
 
 export default function Home() {
   const aboutControls = useAnimation();
@@ -74,7 +76,14 @@ export default function Home() {
       <motion.div 
       id="slider"
       initial={{ opacity: 0 }} animate={sliderControls}>
-        <Slider />
+        {/* <Slider /> */}
+        <Product/>
+      </motion.div>
+      <motion.div 
+      id="slider"
+      initial={{ opacity: 0 }} animate={sliderControls}>
+        {/* <Slider /> */}
+        <Services/>
       </motion.div>
       <motion.div 
       id='otherSkills'

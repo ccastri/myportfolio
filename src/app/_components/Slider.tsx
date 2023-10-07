@@ -3,11 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
-const sliderItems = [
-  {'imgBg':"almabyym.png", 'adds':'Diseño y consultoria de sistemas e-commerce', 'repoLink':'https://github.com/ccastri/alma-by-tdi' , 'website':'https://www.almabyyuyumolina.com'},
-  {'imgBg':"angular_firebase.png", 'adds':'Servicios RESTFull para actualizaciones en tiempo real', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
-  {'imgBg':"react-three-fiber.png", 'adds':'Aplicaciones 3D: Modelado, interactividad y procesamiento ', 'repoLink':'https://github.com/ccastri/react-three-fiber' , 'website':' https://r3js-vite.vercel.app/'},
-  {'imgBg':"knee_prosthesis.png", 'adds':'Visualizacion y construccion de entornos medicos en 3D', 'repoLink':'https://github.com/ccastri/THREEJS-basics' , 'website':' https://threejs-basics-sigma.vercel.app/'},
+export const sliderItems = [
+  {'id':1, 'title':'Soluciones e-commerce', 'imgBg':"almabyym.png", 'adds':'Diseño y consultoria de sistemas e-commerce', 'repoLink':'https://github.com/ccastri/alma-by-tdi' , 'website':'https://www.almabyyuyumolina.com'},
+  {'id':2, 'title':"Diseño de RESTFull API's", 'imgBg':"angular_firebase.png", 'adds':'Servicios RESTFull para actualizaciones en tiempo real', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
+  {'id':3, 'title':'Diseño 3D:', 'imgBg':"react-three-fiber.png", 'adds':'Aplicaciones 3D: Modelado, interactividad y procesamiento ', 'repoLink':'https://github.com/ccastri/react-three-fiber' , 'website':' https://r3js-vite.vercel.app/'},
+  {'id':4, 'title':'Entornos 3D digitales en salud', 'imgBg':"knee_prosthesis.png", 'adds':'Visualizacion y construccion de entornos medicos en 3D', 'repoLink':'https://github.com/ccastri/THREEJS-basics' , 'website':' https://threejs-basics-sigma.vercel.app/'},
 
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172032.png_big_no_bg.png'},
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172055.png_big_no_bg.png'},
