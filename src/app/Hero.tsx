@@ -9,27 +9,11 @@ import DownloadIcon from '@mui/icons-material/Download';
 const Hero = () => {
 
   return (
-    <main className='w-10/12 mx-auto md:h-screen h-full rounded-3xl m-8 text-sm  bg-[#1a1a1a] p-2 shadow-2xl shadow-blur-12  shadow-red-500 border-8 border-red-500 md:space-y-6 md:items-center  md:px-16  z-40  flex overflow-x-hidden ' >
+    <main className='w-10/12 group relative hover:scale-105 h-auto hover:ease-in-out mt-32 mb-28  duration-200 transition-all transform  mx-auto  my-auto justify-center items-center rounded-3xl m-2 text-sm  bg-[#1a1a1a] p-2 shadow-2xl shadow-blur-12  shadow-red-500 border-8 border-red-500 md:space-y-6 md:items-center  md:px-16  z-40  flex flex-col overflow-x-hidden ' >
       
-      {/* First triangle */}
-      {/* <div className=" absolute h-full  bg-[#acbad6] clip-triangle shadow-xl -rotate-180 overflow-y-hidden w-screen" /> */}
-      
-      {/* Hero section: IMAGE + HERO TEXT AND BUTTONS */}
-        {/* <div className='  w-full  p-4  flex items-center space-y-12 sm:space-y-0  flex-col sm::flex-row relative  '> */}
-          {/* <div  className="absolute h-1/2  z-40  top-10 justify-center items-center my-auto sm:h-full overflow-y-hidden flex   w-auto  sm:left-0  ">
-            <Image
-              src="/hero.png"
-              alt="Camilo Castrillon"
-              priority
-              className=" w-full mx-auto object-cover h-full sm:my-auto "
-              width={400}
-              height={400}
-            />
-          </div> */}
-
         {/* Hero text */}
-        <div className='h-full  items-center rounded-3xl border-8 border-[#1a1a1a]  bg-[#f1f2f2]  w-full  sm:my-auto  pt-12 text-slate-700  overflow-y-hidden     sm:items-center sm:justify-center  overflow-x-hidden p-4 flex flex-col'>
-          <h1 className='z-40 font-semibold  px-4 ml-4 md:w-full text-2xl sm:text-3xl   '>
+        <div className='h-full bottom-0 items-end justify-end rounded-3xl border-4 border-[#1a1a1a]  bg-[#f1f2f2]  w-full   pt-8 sm:py-24 text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
+          <h1 className='z-40 font-semibold   px-4 ml-4 md:w-full text-2xl sm:text-3xl   '>
               Hola, Bienvenidos!
           </h1>
           <p className='text-md z-20 relative   text-xl sm:text-25xl w-full '>
@@ -52,8 +36,8 @@ const Hero = () => {
                 <CVButton/> <DownloadIcon className=" group-hover:text-s[#fafaa]"/>
               </div>
             </div>
-            <div className='w-6/12 pt-2 bottom-0 h-2 bg-gray-300 rounded-full'/>
           </div>
+            <div className='w-6/12 pt-2 bottom-6 absolute h-2 mx-auto bg-gray-300 rounded-full'/>
       {/* </div> */}
       {/* <div className='h-2 w-8/12 flex flex-col absolute  bg-gray-400'/> */}
     </main>
