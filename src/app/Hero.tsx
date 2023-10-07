@@ -9,9 +9,9 @@ import DownloadIcon from '@mui/icons-material/Download';
 const Hero = () => {
   
   return (
-    <div className="flex h-screen group hover:py-6 z-30 w-screen  pl-6 sm:mb-64 relative hover:scale-105   hover:ease-in-out duration-200 transition-all transform ">
-      <div className='h-6 sm:h-screen  bottom-40 w-9/12  mx-2    shadow-2  shadow-md  group-hover:scale-105  blur-sm border-4 bg-red-500 border-red-500 absolute -z-20  border-l-none border-b-none rounded-3xl   ml-10 sm:ml-14 lg:ml-28 lg:mb-62 lg:pl-4'/>
-          <div className='z-40 group-hover md:h-44 md:w-4 top-44  sm:mx-auto flex md:flex-col justify-center sm:justify-between sm:space-y-2 px-1 py-2 space-x-2 items-center mx-auto bg-[#1a1a1a] h-4 top-34 sm:top-48 sm:group-hover:left-44 left-40 sm:left-48  sm:pl-2 w-3/12 rounded-full absolute'>
+    <div className="flex h-screen  z-30 w-screen  pl-6 sm:mb-64 relative hover:scale-105   hover:ease-in-out duration-200 transition-all transform ">
+      <div className='h-6 sm:h-screen  bottom-28 pb-4 w-9/12  mx-2    shadow-2  shadow-md  group-hover:scale-105  blur-md border-4 bg-red-500 border-red-500 absolute -z-20  border-l-none border-b-none rounded-3xl   ml-9 sm:ml-14 lg:ml-28 lg:mb-62 lg:pl-4'/>
+          <div className='z-40 group-hover md:h-44 md:w-4 top-36  sm:mx-auto flex md:flex-col justify-center sm:justify-between sm:space-y-2 px-1 py-2 space-x-2 items-center mx-auto bg-[#1a1a1a] h-4  sm:top-48 sm:group-hover:left-44 left-40 sm:left-48  sm:pl-2   w-3/12 rounded-full absolute'>
             
             <span className="rounded-full bg-slate-600 ml-1 w-12 h-2 mx-auto sm:w-2 sm:h-12"></span>
             
