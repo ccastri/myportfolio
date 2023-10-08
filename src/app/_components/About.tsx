@@ -26,9 +26,9 @@ const About = () => {
             que impacta positivamente a personas y empresas locales.
             <br/>
             <br/>
-             Mi enfoque en certificaciones y estándares 
-            asegura que tus ideas cumplan con expectativas tanto locales como internacionales, especialmente en 
-            la industria médica, donde busco cumplir con estándares como HL7 y HIPAA.
+            Mi enfoque en estándares de calidad 
+            garantiza que tus ideas cumplan con expectativas tanto locales como internacionales, especialmente en 
+            la industria médica, donde opero de la mano de estándares como HL7 y HIPAA.
           </p>
           {/* <p>Beda Software is a full-cycle software house with a strong focus on healthcare and related fields.
              We turn your ideas into real-life products through product strategy, analytics, UI/UX design and

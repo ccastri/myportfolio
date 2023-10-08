@@ -28,7 +28,7 @@ const Hero = () => {
             Me llamo
             <span className="z-20 font-semibold"> Camilo Castrillón.</span> <span className="font-bold text-yellow-500">Soy Ingeniero biomédico,</span> 
           <span className='text-blue-500 font-semibold'> experto en salud y teconología. </span> <br/><span className= "w-full m-0  font-bold p-0 text-red-500 pb-2"> <LocationOnIcon/> Actualmente vivo en Cali, Colombia. <br/><br/></span> 
-           Desarrollo apps web, móviles y basadas en IA con la mision de modernizar la infraestuctura tecnológica en salud... 
+           Desarrollo apps web, móviles y basadas en IA con la mision de modernizar el sector salud IT en la región... 
            {/* <>O de tu empresa, cualquiera que sea</> */}
           </p>
           <div className='space-x-4 w-auto h-auto items-center justify-center py-6 text-center flex '>
