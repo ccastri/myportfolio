@@ -4,10 +4,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
 export const sliderItems = [
-  {'id':1, 'title':'Soluciones e-commerce', 'imgBg':"almabyym.png", 'adds':'Diseño y consultoria de sistemas e-commerce', 'repoLink':'https://github.com/ccastri/alma-by-tdi' , 'website':'https://www.almabyyuyumolina.com'},
-  {'id':2, 'title':"Diseño de RESTFull API's", 'imgBg':"angular_firebase.png", 'adds':'Servicios RESTFull para actualizaciones en tiempo real', 'repoLink':'https://github.com/ccastri/productSoft' , 'website':' https://productsoft-52eb0.web.app/dashboard'},
-  {'id':3, 'title':'Diseño 3D:', 'imgBg':"react-three-fiber.png", 'adds':'Aplicaciones 3D: Modelado, interactividad y procesamiento ', 'repoLink':'https://github.com/ccastri/react-three-fiber' , 'website':' https://r3js-vite.vercel.app/'},
-  {'id':4, 'title':'Entornos 3D digitales en salud', 'imgBg':"knee_prosthesis.png", 'adds':'Visualizacion y construccion de entornos medicos en 3D', 'repoLink':'https://github.com/ccastri/THREEJS-basics' , 'website':' https://threejs-basics-sigma.vercel.app/'},
+  {'id':1, 
+  'title':'Soluciones e-commerce',
+   'imgBg':"almabyym.png",
+   'adds':'Las tiendas virtuales y el comercio electrónico son uno de los canales más implementados en la actualidad debido al mayor alcance que ofrece la web. Estrategias de marketing enfocadas en redes pueden ser un gamechanger para tu negocio',
+   'repoLink':'https://github.com/ccastri/alma-by-tdi' ,
+    'website':'https://www.almabyyuyumolina.com'},
+  {'id':2, 
+  'title':"Diseño de RESTFull API's",
+   'imgBg':"angular_firebase.png",
+    'adds':'Cuando buscamos optimizar el manejo de la información, seguridad, integracion continua o escalar nuestro sistema según las necesidades en tiempo real de nuestro negocio. Una Rest Api puede encargarse de toda la logistica y de almacenar la informacion de nuestra base de datos y monitorea los cambios en tiempo real mejorando el control sobre la operacion diaria',
+     'repoLink':'https://github.com/ccastri/productSoft' ,
+      'website':' https://productsoft-52eb0.web.app/dashboard'},
+  {'id':3, 
+  'title':'Diseño 3D:', 'imgBg':"react-three-fiber.png", 'adds':'Aplicaciones 3D: Traer tus propios diseños en 3D a la realidad ¡Ahora es posible! Las mejores herramientas de software 3D y diseño CAD permiten darle vida a protesis, piezas y repuestos dificiles de conseguir o a la medida, animaciones y graficos para realidad aumentada... el limite lo pone tu imaginación ', 'repoLink':'https://github.com/ccastri/react-three-fiber' , 'website':' https://r3js-vite.vercel.app/'},
+  {'id':4, 
+  'title':'Entornos 3D digitales en salud', 'imgBg':"knee_prosthesis.png", 'adds':'La vision artificial y la realidad aumentada son algunas de las técnicas que marcan la pauta en la industria de la tecnología médica. Las posibilidades de recrear escenarios reales en espacios digitales prometen una mejora sin precedentes en todo el proceso de entrenamiento para los especialistas y el soporte en tiempo real abre las puertas de un soporte personalizado e ininterrumpido', 'repoLink':'https://github.com/ccastri/THREEJS-basics' , 'website':' https://threejs-basics-sigma.vercel.app/'},
 
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172032.png_big_no_bg.png'},
   // {'imgBg':"aesthetic_col_3.png", "img":'PhotoRoom_20230811_172055.png_big_no_bg.png'},
@@ -61,7 +73,7 @@ const Slider = () => {
         // }}
       >
             {/* Use conditional rendering to display the current image */}
-            <div 
+            {/* <div 
             // initial={{ opacity: 0 }}
             //   animate={{ opacity: index === currentImageIndex ? 1 : 0 }}
             //   exit={{ opacity: 0 }}
@@ -76,7 +88,7 @@ const Slider = () => {
                 <span>Ver App</span>
               </div>
               </div>
-            </div>
+            </div> */}
             
             <Image
               className=" w-screen h-screen opacity-60 object-cover cursor-pointer"

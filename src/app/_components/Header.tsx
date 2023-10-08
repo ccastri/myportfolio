@@ -47,23 +47,24 @@ const Header = () => {
   };
   return (
     // <div className='fixed h-24'>
-    <nav className={`${isScrolled && 'bg-[rgb(161,161,161)]'}  fixed  top-0 z-50 `}>
-      <div className="w-screen right-0 text-[#fafafa] py-2 px-5"><MenuIcon onClick={()=>setIsOpen(!isOpen)}/></div>
-      <div  className={`${
-          isOpen ? 'h-screen flex space-y-8 opacity-100' : 'h-0 hidden opacity-0'
-        } py-4 z-50 flex-col top-10 px-5 bg-[#fafafa] transition-all duration-200 ease-in-out absolute left-0 right-0`}>
-        <h1 className='text-xl'>Menu</h1>
-        <ul className={`${isOpen ?'flex flex-col space-y-6' :'hidden h-0'}`}>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={handleMenuClick}>Inicio</li>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={() => scrollToSection('about')}>Sobre Mí</li>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={() => scrollToSection('stack')}>Proyecto en curso</li>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={() => router.push('services')}>Servicios</li>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={() => scrollToSection('slider')}>Proyectos realizados</li>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={() => router.push('products')}>Productos</li>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={() => scrollToSection('otherSkills')}>Otras habilidades</li>
-            <li className={`${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-1/3 hover:scale-105' :'hidden h-0'}`} onClick={() => scrollToSection('footer')}>Contacto</li>
+    <nav className={`${isScrolled && 'bg-[#f1f1f1]  '}  fixed  w-full top-0 z-50 `}>
+      <div className="w-screen right-0  py-4 px-5"><MenuIcon className ={`${isScrolled&& ''}`}onClick={()=>setIsOpen(!isOpen)}/></div>
+      <div  className={`w-screen ${
+          isOpen ? 'ease-in-out h-screen flex space-y-6 opacity-100' : 'h-0  opacity-0'
+        } items-center mx-auto py-4 z-50 flex-col top-10  bg-[#fafafa] transition-all duration-200  absolute left-0 right-0`}>
+        <h1 className='text-xl font-bold '>Menu</h1>
+        <ul className={`text-center w-screen  mx-auto items-center justify-center ${isOpen ?'flex flex-col space-y-6' :'hidden h-0'}`}>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={handleMenuClick}>Inicio</li>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={() => {scrollToSection('about'); setIsOpen(!isOpen)}}>Sobre Mí</li>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={() => {scrollToSection('stack'); setIsOpen(!isOpen)}}>Proyecto en curso</li>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={() => {router.push('services'); setIsOpen(!isOpen)}}>Servicios</li>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={() => {scrollToSection('slider'); setIsOpen(!isOpen)}}>Proyectos realizados</li>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={() => {router.push('products'); setIsOpen(!isOpen)}}>Productos</li>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={() => {scrollToSection('otherSkills'); setIsOpen(!isOpen)}}>Otras habilidades</li>
+            <li className={`text-center text-lg font-semibold tracking-wide flex items-center justify-center mx-auto ${isOpen ?'flex cursor-pointer hover:text-slate-400 hover:ease-in-out transition-all transform duration-200 w-screen text-center hover:scale-105' :'hidden h-0'}`} onClick={() => {scrollToSection('footer'); setIsOpen(!isOpen)}}>Contacto</li>
 
         </ul>
+        <button onClick={()=>scrollToSection('footer')}className="border-4 text-xl font-semibold tracking-wide border-green-600 rounded-full px-4 py-3 hover:text-[#fafafa] border-2 hover:bg-slate-700 text-slate-700" >Necesito ayuda </button>
       </div>
     <div 
      style={{ width: `${scrollPosition}%` }}
