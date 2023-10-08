@@ -17,9 +17,9 @@ const Hero = () => {
             
             <span className="rounded-full bg-slate-600 w-2 sm:mr-6 h-2"></span>
           </div>
-    <main className='w-9/12 sm:h-screen  relative group-hover:scale-105 h-auto py-3 mt-10 mb-44 group-hover:ease-in-out sm:mt:0     mx-auto   justify-center items-center rounded-[24px] m-12 text-sm  bg-[#1a1a1a] p-1 shadow-2xl shadow-blur-12  shadow-red-500 border-2 border-blur-md border-red-500 md:space-y-6 md:items-center  md:px-6  z-30  flex flex-col  ' >
+    <main className='w-9/12 sm:h-screen  relative group-hover:scale-105 h-auto  mt-10 mb-44 group-hover:ease-in-out sm:mt:0     mx-auto   justify-center items-center rounded-[28px] m-12 text-sm  bg-[#1a1a1a] p-1 shadow-2xl shadow-blur-12  shadow-red-500 border-2 border-blur-md border-red-500 md:space-y-6 md:items-center  md:px-6  z-30  flex flex-col  ' >
         {/* Hero text */}
-        <div className='h-full bottom-0 z-40 relative items-end justify-center rounded-[16px] border-1 border-blur-sm border-[#1a1a1a]  bg-[#f1f2f2]  w-full    text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
+        <div className='h-full bottom-0 z-40 relative items-end justify-center rounded-[20px] border-1 border-blur-sm border-[#1a1a1a]  bg-[#f1f2f2]  w-full    text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
           <h1 className='z-40 font-semibold pb-2 ml-4  w-full text-2xl sm:text-3xl   '>
               Hola, Bienvenidos!
           </h1>
