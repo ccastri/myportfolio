@@ -9,6 +9,9 @@ import Image from 'next/image';
 interface Project {
   id: number;
   name: string;
+  stargazers_count:string;
+  watchers_count: string;
+  forks_count:string;
   // Add other properties as needed
 }
 
