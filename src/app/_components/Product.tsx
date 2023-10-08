@@ -18,7 +18,7 @@ const Product = () => {
         <h2 className='font-bold text-25xl '>
             {item.title}
         </h2>
-        <p className='text-xl'>
+        <p className='text-lg'>
         {item.adds}
         </p>
 
