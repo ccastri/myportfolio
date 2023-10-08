@@ -11,16 +11,16 @@ const Hero = () => {
   return (
     <div className="flex h-screen  z-30 w-screen mt-20 pl-6 sm:mb-64 relative hover:scale-105   hover:ease-in-out duration-200 transition-all transform ">
       <div className='h-6 sm:h-screen  bottom-36 mb-4 pb-4 w-9/12  mx-2    shadow-2  shadow-md  group-hover:scale-105  blur-md border-4 bg-red-500 border-red-500 absolute -z-20  border-l-none border-b-none rounded-2xl   ml-9 sm:ml-14 lg:ml-28 lg:mb-62 lg:pl-4'/>
-          <div className='z-40 group-hover md:h-44 md:w-4 top-16  sm:mx-auto flex md:flex-col justify-center sm:justify-between sm:space-y-2 px-1 py-2 space-x-2 items-center mx-auto bg-[#1a1a1a] h-4  sm:top-72 sm:group-hover:left-44 left-40 sm:left-48  sm:ml-2 sm:pl-2   w-3/12 rounded-full absolute'>
+          <div className='z-40 group-hover md:h-44 md:w-4 top-16  sm:mx-auto flex sm:flex-col  justify-center  sm:space-y-2 py-2 space-x-2 items-center mx-auto bg-[#1a1a1a] h-4  sm:top-72 sm:group-hover:left-44 left-40 sm:left-32 md:left-32 lg:left-40  xl:left-54 xl:ml-10     w-3/12 rounded-full absolute'>
             
             <span className="rounded-full bg-slate-600 ml-1 w-12 h-2 mx-auto sm:w-2 sm:h-12"></span>
             
             <span className="rounded-full bg-slate-600 w-2 sm:mr-6 h-2"></span>
           </div>
-    <main className='w-9/12 sm:h-screen  relative group-hover:scale-105 h-auto py-3 mt-10 mb-44 group-hover:ease-in-out sm:mt:0     mx-auto   justify-center items-center rounded-3xl m-12 text-sm  bg-[#1a1a1a] p-1 shadow-2xl shadow-blur-12  shadow-red-500 border-2 border-blur-md border-red-500 md:space-y-6 md:items-center  md:px-8  z-30  flex flex-col  ' >
+    <main className='w-9/12 sm:h-screen  relative group-hover:scale-105 h-auto py-3 mt-10 mb-44 group-hover:ease-in-out sm:mt:0     mx-auto   justify-center items-center rounded-[24px] m-12 text-sm  bg-[#1a1a1a] p-1 shadow-2xl shadow-blur-12  shadow-red-500 border-2 border-blur-md border-red-500 md:space-y-6 md:items-center  md:px-6  z-30  flex flex-col  ' >
         {/* Hero text */}
-        <div className='h-full bottom-0 z-40 relative items-end justify-center rounded-3xl border-1 border-blur-sm border-[#1a1a1a]  bg-[#f1f2f2]  w-full    text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
-          <h1 className='z-40 font-semibold pb-2 ml-4  border-2 w-full text-2xl sm:text-3xl   '>
+        <div className='h-full bottom-0 z-40 relative items-end justify-center rounded-[16px] border-1 border-blur-sm border-[#1a1a1a]  bg-[#f1f2f2]  w-full    text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
+          <h1 className='z-40 font-semibold pb-2 ml-4  w-full text-2xl sm:text-3xl   '>
               Hola, Bienvenidos!
           </h1>
           <p className='text-md z-20 relative   text-xl sm:text-25xl w-full '>
