@@ -11,14 +11,14 @@ const Product = () => {
 
             <div>
       <Image 
-      className="h-[50vh] w-screen object-cover"
-      src={`/${item.imgBg}`}  alt='' width={512} height={512}/>
+      className="h-auto w-screen object-cover"
+      src={`/${item.imgBg}`}  alt='' width={1064} height={800}/>
       </div>
       <div className="h-[40vh] flex flex-col space-y-4 px-4 py-2 bg-[#fafafa]">
-        <h2 className='font-bold text-xl '>
+        <h2 className='font-bold text-25xl '>
             {item.title}
         </h2>
-        <p>
+        <p className='text-xl'>
         {item.adds}
         </p>
 

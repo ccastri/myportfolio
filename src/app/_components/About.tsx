@@ -21,7 +21,7 @@ const About = () => {
               height={400}
             />
           </div>
-          <p className="p-4 sm:w-10/12 text-xl font">
+          <p className="p-4 sm:w-10/12 text-25xl font">
             Soy una persona apasionada por aprender y curiosa por naturaleza. Como ingeniero, desarrollo tecnología
             que impacta positivamente a personas y empresas locales.
             <br/>

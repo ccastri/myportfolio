@@ -20,26 +20,26 @@ const Hero = () => {
     <main className='w-9/12 sm:h-screen  relative group-hover:scale-105 h-auto py-3 mt-10 mb-44 group-hover:ease-in-out sm:mt:0     mx-auto   justify-center items-center rounded-3xl m-12 text-sm  bg-[#1a1a1a] p-1 shadow-2xl shadow-blur-12  shadow-red-500 border-2 border-blur-md border-red-500 md:space-y-6 md:items-center  md:px-8  z-30  flex flex-col  ' >
         {/* Hero text */}
         <div className='h-full bottom-0 z-40 relative items-end justify-center rounded-3xl border-1 border-blur-sm border-[#1a1a1a]  bg-[#f1f2f2]  w-full    text-slate-700  overflow-y-hidden   overflow-x-hidden p-4 flex flex-col'>
-          <h1 className='z-40 font-semibold   px-4 ml-4 md:w-full text-2xl sm:text-3xl   '>
+          <h1 className='z-40 font-semibold pb-2 ml-4  border-2 w-full text-2xl sm:text-3xl   '>
               Hola, Bienvenidos!
           </h1>
           <p className='text-md z-20 relative   text-xl sm:text-25xl w-full '>
             <span className=" mt-3  4 ml-28 absolute h-4 opacity-60 bg-green-500 w-48 -z-10"/>
             Me llamo
             <span className="z-20 font-semibold"> Camilo Castrillón.</span> <span className="font-bold text-yellow-500">Soy Ingeniero biomédico,</span> 
-          <span className='text-blue-500 font-semibold'> experto en salud y teconología. </span> <br/><span className= "w-full m-0  font-bold p-0 text-red-500"> <LocationOnIcon/> Actualmente vivo en Cali, Colombia. </span>
+          <span className='text-blue-500 font-semibold'> experto en salud y teconología. </span> <br/><span className= "w-full m-0  font-bold p-0 text-red-500 pb-2"> <LocationOnIcon/> Actualmente vivo en Cali, Colombia. <br/><br/></span> 
            Desarrollo apps web, móviles y basadas en IA con la mision de modernizar la infraestuctura tecnológica en salud... 
            {/* <>O de tu empresa, cualquiera que sea</> */}
           </p>
-          <div className='space-x-4 w-auto h-auto  py-6 text-center flex '>
+          <div className='space-x-4 w-auto h-auto items-center justify-center py-6 text-center flex '>
 
           {/*GITHUB AND CV BUTTON */}
             <div 
             onClick={()=>window.open('https://www.github.com/ccastri', '_blank')}
-            className="hover:border-b-2 items-center flex justify-center py-2 px-6 w-1/2 opacity-80 hover:opacity-100 mx-auto bg-[#0F62FE] hover:bg-slate-600 text-[#fafafa] cursor-pointer rounded transition-all duration-200 transform hover:ease-in-out hover:scale-105  ">
+            className="hover:border-b-2  flex h-12 py-1 px-4 items-center justify-center w-1/2 opacity-80 hover:opacity-100 mx-auto bg-[#0F62FE] hover:bg-slate-600 text-[#fafafa] cursor-pointer rounded transition-all duration-200 transform hover:ease-in-out hover:scale-105  ">
               <span>Repo <GitHub/></span>
             </div>
-              <div className='mx-auto group border-2 px-2 rounded-md w-1/2 h-auto text-center flex items-center  hover:text-[#fafafa] cursor-pointer   hover:bg-gray-500 transition-all duration-200 transform hover:ease-in-out'>
+              <div className='mx-auto group border-2 px-4 rounded-md w-1/2 h-12 text-center flex items-center  hover:text-[#fafafa] cursor-pointer   hover:bg-gray-500 transition-all duration-200 transform hover:ease-in-out'>
                 <CVButton/> <DownloadIcon className=" group-hover:text-s[#fafaa]"/>
               </div>
             </div>

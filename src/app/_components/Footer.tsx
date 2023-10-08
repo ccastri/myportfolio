@@ -30,7 +30,7 @@ const Footer = () => {
         <input type="text"  placeholder='Nombre' className='py-4 bg-[#f2f2f2] border-b-2 border-[#a1a1a1]'/>
         <textarea placeholder='Cuéntame cómo crees que empezamos a cambiar el mundo' className=' h-44 bg-[#f2f2f2] border-b-2 border-[#a1a1a1]' />
 
-        <input type="submit" className=' py-2  sm:ml-[80%] border-2  bg-[#fafafa] text-gray-400 text-md   ' />
+        <input type="submit" className=' py-2 cursor-pointer  sm:ml-[80%] rounded-full font-semibold tracking-wide bg-[#1a1a1a] border-2   text-[#fafafa] text-md   ' />
         </form></>
       <div className="w-screen items-center pt-20 flex ">
 

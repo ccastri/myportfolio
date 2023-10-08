@@ -50,7 +50,7 @@ const Header = () => {
     <nav className={`${isScrolled && 'bg-[#f1f1f1]  '}  fixed  w-full top-0 z-50 `}>
       <div className="w-screen right-0  py-4 px-5"><MenuIcon className ={`${isScrolled&& ''}`}onClick={()=>setIsOpen(!isOpen)}/></div>
       <div  className={`w-screen ${
-          isOpen ? 'ease-in-out h-screen flex space-y-6 opacity-100' : 'h-0  opacity-0'
+          isOpen ? 'ease-in-out h-screen flex space-y-6 opacity-100' : 'h-0 top-0 -z-50 opacity-0'
         } items-center mx-auto py-4 z-50 flex-col top-10  bg-[#fafafa] transition-all duration-200  absolute left-0 right-0`}>
         <h1 className='text-xl font-bold '>Menu</h1>
         <ul className={`text-center w-screen  mx-auto items-center justify-center ${isOpen ?'flex flex-col space-y-6' :'hidden h-0'}`}>
