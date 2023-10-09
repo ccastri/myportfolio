@@ -4,7 +4,7 @@ import Banner from '../../../_components/Banner'
 import StlViewerAgain from '@/app/_components/StlViewerAgain'
 import StlViewer from '@/app/_components/StlViewer'
 import StlViewerFiber from '@/app/_components/StlViewerFiber'
-import ContactForm from '@/app/_components/contactForm'
+import ContactForm from '@/app/_components/ContactForm'
 const page = () => {
   return (
     <div className="bg-[#fafafa]">
