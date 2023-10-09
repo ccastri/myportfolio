@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import StlViewerFiber from '@/app/_components/StlViewerFiber'
 const page = () => {
