@@ -37,10 +37,10 @@ controls.enableDamping = true;
   }, []);
 
   return (
-    <div>
-      {/* <h1>Hey you!</h1> */}
-    </div>
-  );
-};
+    <div />
+    );
+  };
 
-export default StlViewerAgain;
+  export default StlViewerAgain;
+  {/* <h1>Hey you!</h1> */}
+{/* </div> */}

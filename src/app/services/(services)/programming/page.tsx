@@ -4,6 +4,7 @@ import Banner from '../../../_components/Banner'
 import StlViewerAgain from '@/app/_components/StlViewerAgain'
 import StlViewer from '@/app/_components/StlViewer'
 import StlViewerFiber from '@/app/_components/StlViewerFiber'
+import ContactForm from '@/app/_components/contactForm'
 const page = () => {
   return (
     <div className="bg-[#fafafa]">
@@ -19,8 +20,11 @@ const page = () => {
       <button className='sm:w-3/12 font-bold   rounded-full mt-12 px-6 py-2 text-md tracking-wider  text-[#1a1a1a] bg-[#fafafa]  hover:bg-slate-700  hover:text-[#fafafa]'>Contactame</button>
      </div>
     </div>
+    {/* <div className='relative h-screen w-scree'>
+
+    
+    </div> */}
     <div className=' h-auto p-4 bg-[#fafafa]'>
-      {/* <h2 className="text-3xl">Profesional con experiencia interdisciplinaria</h2> */}
       <p className='text-md'>Hago uso de la programacion para abordar multiples problemas cotidianos, incluso fuera del ámbito de la salud. 
       <br/>
       <br/>
@@ -35,6 +39,7 @@ const page = () => {
     <div>
 
     <StlViewerAgain/>
+      <ContactForm/>
     </div>
     {/* <Banner/> */}
 

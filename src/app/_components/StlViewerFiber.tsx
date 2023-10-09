@@ -1,4 +1,5 @@
 'use client'
+
 // ! Within this component you will be able to render two different 3d models
 // !Merlina y a knee prosthesis bellow you will encounter the coordinates 
 // !For manually center each model (look into the calculateAndApplyTransform function to do so)
@@ -8,11 +9,13 @@ import React, { useEffect } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { STLLoader } from 'three/examples/jsm/loaders/STLLoader.js';
-import * as dat from 'dat.gui'
+import *as dat from 'dat.gui'
 import Stats from 'three/examples/jsm/libs/stats.module.js'
 
 const StlViewer = () => {
-//! useEffect to run the scene at loading time
+  
+  //   
+  //! useEffect to run the scene at loading time
   useEffect(() => {
 //! Instanciationg debugger ( new dat.GUI() object)
 //! Define object 3d for scalation pourposes
@@ -36,6 +39,11 @@ const lightBack = new THREE.SpotLight(0xffffff); // Luz trasera
 lightBack.position.set(0, 20, -200); // Posición en la parte trasera
 scene.add(lightBack);
 
+const sceneLight = new THREE.AmbientLight(0xffffff);
+        sceneLight.castShadow = true;
+        sceneLight.position.set (15,30,50);
+
+        scene.add(sceneLight);
 //! Create camera object with field of view,
 //!  the ratio between width and height (screenSize) and
 //!  the closest and farthest zoom
@@ -91,7 +99,7 @@ const renderer = new THREE.WebGLRenderer();
       // !
     const loadSTL = (stlFile: string, index: number) => {
       //  const folder = new THREE.Group();
-      loader.load(`/files/${stlFile}`, (geometry) => {
+      loader.load(`/files/${stlFile}`, (geometry: any) => {
         // console.log(stlFile)
         mesh = new THREE.Mesh(geometry, material);
 
@@ -204,7 +212,7 @@ const  colorController= gui.addColor(meshAux, 'color',)
              render();
             }
             // return mesh
-          }, undefined, (error) => {
+          }, undefined, (error: any) => {
             console.error(`Error loading STL file '${stlFile}':`, error);
           });
         };
@@ -327,7 +335,7 @@ document.body.appendChild(stats.dom)
 
   return (
 <>
-<div className="h-screen absolute overflow-y-scroll"/>
+<div/>
 </>
   
   )

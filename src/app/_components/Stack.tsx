@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import {useRouter} from 'next/navigation'
 const Stack = () => {
+  const router = useRouter()
   return (
     <main className="h-screen flex relative text-[#fafafa] bg-black flex-col items-center text-center justify-center w-screen border-2  ">
          <div className="absolute  w-full h-full flex flex-col items-center justify-center  z-10">
@@ -26,6 +28,12 @@ const Stack = () => {
          <Image className="mx-auto text-center hover:scale-105 transition-all duration-200 hover:ease-in-out transform" src="/python-logo-small.svg" alt="Python Logo" width={50} height={50}/>
          <Image className="mx-auto text-center hover:scale-105 transition-all duration-200 hover:ease-in-out transform" src="/c_++_logo.svg" alt="Python Logo" width={50} height={50}/>
       </div>
+      <button 
+      onClick={()=>router.push('/products/ongoing-project/')} 
+      className='px-3 py-2 bg-[#fafafa] ml-44 opacity-10 hover:opacity-100 w-4/12 text-center rounded-full font-bold border-4 border-blue-600 hover:bg-blue-600 hover:text-[#fafafa] hover:ease-in-out transition-all duration-200'
+      >
+        Ver más <ArrowForwardIcon/>
+      </button>
         </div>
     </main>
   )

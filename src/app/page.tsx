@@ -8,6 +8,8 @@ import { motion, useAnimation } from 'framer-motion';
 import About from './_components/About';
 import Product from './_components/Product';
 import Services from './_components/Services';
+import ContactForm from './_components/contactForm';
+// import ContactForm from './_components/ContactForm';
 
 export default function Home() {
   const aboutControls = useAnimation();
@@ -90,6 +92,7 @@ export default function Home() {
       initial={{ opacity: 0 }} animate={otherSkillsControls}>
         <OtherSkills />
       </motion.div>
+      <ContactForm/>
     </main>
   );
 }
