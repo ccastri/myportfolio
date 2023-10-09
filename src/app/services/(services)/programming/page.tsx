@@ -1,6 +1,9 @@
 import React from 'react'
 import DevServiceOptions from '../../../_components/DevServiceOption'
 import Banner from '../../../_components/Banner'
+import StlViewerAgain from '@/app/_components/StlViewerAgain'
+import StlViewer from '@/app/_components/StlViewer'
+import StlViewerFiber from '@/app/_components/StlViewerFiber'
 const page = () => {
   return (
     <div className="bg-[#fafafa]">
@@ -9,6 +12,7 @@ const page = () => {
 {/* bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-zinc-400 via-orange-200 to-fuchsia-600 */}
 {/* bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-600 via-lime-800 to-amber-300 */}
      <div className='z-40 space-y-16 px-8 py-12  absolute'>
+      
      <h2 className='flex    my-auto rounded-[16px] text-3xl h-32 items-center font-bold z-40 '>Desarrollo de software <span className="text-3xl   border-black flex font-semibold left-48 opacity-20 absolute">DSw</span></h2>
      <p className="text-2xl text-[#fafafa] font-bold tracking-wide">Soy un consultor especializado en automatización y optimización para tu negocio en esta era de transición tecnológica</p>
 
@@ -28,6 +32,10 @@ const page = () => {
       </p>
     </div>
     <DevServiceOptions/>
+    <div>
+
+    <StlViewerAgain/>
+    </div>
     {/* <Banner/> */}
 
     </ div>
