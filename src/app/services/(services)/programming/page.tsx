@@ -1,10 +1,11 @@
 import React from 'react'
-
+import DevServiceOptions from '../../../_components/DevServiceOption'
+import Banner from '../../../_components/Banner'
 const page = () => {
   return (
-    <>
-    <div className=" h-[75vh] z-10 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))]  from-zinc-400 via-orange-200 to-fuchsia-600  text-[#fafafa]   mt-20 rounded-[44px] relative sm:h-screen  flex flex-col border-gray-200">
-      <div className="h-full w-full opacity-20 bg-gray-600"/>
+    <div className="bg-[#fafafa]">
+    <div className=" h-[90vh] z-10 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))]  from-zinc-400 via-orange-200 to-fuchsia-600  text-[#fafafa]   mt-20 rounded-[44px] relative sm:h-screen  flex flex-col border-gray-200">
+      <div className="h-full w-full opacity-20 bg-gray-600 rounded-[44px] "/>
 {/* bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-zinc-400 via-orange-200 to-fuchsia-600 */}
 {/* bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-600 via-lime-800 to-amber-300 */}
      <div className='z-40 space-y-16 px-8 py-12  absolute'>
@@ -26,7 +27,10 @@ const page = () => {
        Mi formación técnica en ingeniería y mi experiencia me han llevado al sector IT de la salud, donde me dedico a modernizar plataformas utilizadas por las instituciones de salud, basandome en el principio de interoperabilidad.
       </p>
     </div>
-    </>
+    <DevServiceOptions/>
+    {/* <Banner/> */}
+
+    </ div>
   )
 }
 

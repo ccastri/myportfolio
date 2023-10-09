@@ -23,3 +23,29 @@
 .animate-rotate360 {
   animation: rotate360 25s linear infinite; /* Adjust the duration as needed */
 }
+/* styles.css */
+
+/* Personaliza la apariencia del banner */
+.banner {
+  background-color: #4651ec;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Estilos para la animación */
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px); /* Ajusta la distancia de la traslación */
+  }
+  60% {
+    transform: translateX(-15px); /* Ajusta la distancia de la traslación */
+  }
+}
