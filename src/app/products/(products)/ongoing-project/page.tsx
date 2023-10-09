@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import StlViewerFiber from '@/app/_components/StlViewerFiber'
+import StlViewer from '@/app/_components/StlViewerFiber'
 const page = () => {
   return (
     <div className="mt-20 h-[calc(100vh-40px)]">
@@ -8,7 +8,7 @@ const page = () => {
 Please, if you want to check the working component look at <span onClick ={()=>{window.open('http://3d-printer-k4h32pmvi.vercel.app', '_blank')}}>HERE</span>
 
     </h1> */}
-      <StlViewerFiber/>
+      <StlViewer/>
     </div>
   )
 }
