@@ -19,7 +19,9 @@ const DevServiceOptions = () => {
       </h2>
       <div className="sm:grid grid-cols-3 gap-24 space-y-20 sm:space-y-0 justify-center py-12 items-center px-9 w-full">
         {itemsPersonalizables.map((item) => (
-          <div className="text-center my-auto rounded-[16px]  text-base h-full font-bold relative flex flex-col justify-center items-center">
+          <div
+          key={item.id}
+          className="text-center my-auto rounded-[16px]  text-base h-full font-bold relative flex flex-col justify-center items-center">
             <span className="text-[80px] mx-auto  border-black w-full font-semibold opacity-10 absolute">
               {item.id}
             </span>

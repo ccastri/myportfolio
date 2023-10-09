@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-
+// Framer motion is the answer
 const Banner = () => {
   return (
     <div className=" py-4 text-white text-center">
