@@ -8,7 +8,7 @@ import { motion, useAnimation } from 'framer-motion';
 import About from './_components/About';
 import Product from './_components/Product';
 import Services from './_components/Services';
-import ContactForm from './_components/contactForm';
+import ContactForm from './_components/ContactForm';
 // import ContactForm from './_components/ContactForm';
 
 export default function Home() {
