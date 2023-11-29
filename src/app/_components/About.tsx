@@ -22,13 +22,12 @@ const About = () => {
             />
           </div>
           <p className="p-4 sm:w-10/12 text-25xl font">
-            Soy una persona apasionada por aprender y curiosa por naturaleza. Como ingeniero, desarrollo tecnología
-            que impacta positivamente a personas y empresas locales.
+            I am a person passionate about learning and naturally curious. As an engineer, I develop technology that positively impacts local individuals and businesses.
+
+
             <br/>
             <br/>
-            Mi enfoque en estándares de calidad 
-            garantiza que tus ideas cumplan con expectativas tanto locales como internacionales, especialmente en 
-            la industria médica, donde opero de la mano de estándares como HL7 y HIPAA.
+My focus on quality standards ensures that your ideas meet both local and international expectations, particularly in the medical industry, where I work hand in hand with standards such as HL7 and HIPAA
           </p>
           {/* <p>Beda Software is a full-cycle software house with a strong focus on healthcare and related fields.
              We turn your ideas into real-life products through product strategy, analytics, UI/UX design and

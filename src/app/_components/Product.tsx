@@ -14,11 +14,11 @@ const Product = () => {
       className="h-auto w-screen object-cover"
       src={`/${item.imgBg}`}  alt='' width={1064} height={800}/>
       </div>
-      <div className="h-[40vh] flex flex-col space-y-4 px-4 py-2 bg-[#fafafa]">
+      <div className="md:h-[40vh] h-auto  flex flex-col space-y-4 px-4 py-2 bg-[#fafafa]">
         <h2 className='font-bold text-25xl '>
             {item.title}
         </h2>
-        <p className='text-lg'>
+        <p className='text-lg  h-full'>
         {item.adds}
         </p>
 

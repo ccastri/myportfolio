@@ -60,7 +60,7 @@ export default function Home() {
   }, [aboutControls, stackControls, sliderControls, otherSkillsControls]);
 
   return (
-    <main className="flex flex-col items-center justify-between">
+    <main className="flex px-4 flex-col items-center justify-between">
       <div id="home">
 
       <Hero  />
